@@ -452,61 +452,118 @@
     }
   ],
   "models": {
+    "Grade": {
+      "id": "Grade",
+      "description": "",
+      "required": [
+
+      ],
+      "properties": {
+        "html_url": {
+          "description": "The URL to the Canvas web UI page for the user's grades, if this is a student enrollment.",
+          "example": "",
+          "type": "string"
+        },
+        "current_grade": {
+          "description": "The user's current grade in the class. Only included if user has permissions to view this grade.",
+          "example": "",
+          "type": "string"
+        },
+        "final_grade": {
+          "description": "The user's final grade for the class. Only included if user has permissions to view this grade.",
+          "example": "",
+          "type": "string"
+        },
+        "current_score": {
+          "description": "The user's current score in the class. Only included if user has permissions to view this score.",
+          "example": "",
+          "type": "string"
+        },
+        "final_score": {
+          "description": "The user's final score for the class. Only included if user has permissions to view this score.",
+          "example": "",
+          "type": "string"
+        }
+      }
+    },
     "Enrollment": {
       "id": "Enrollment",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The ID of the enrollment.",
+          "example": 1,
+          "type": "integer"
         },
         "course_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The unique id of the course.",
+          "example": 1,
+          "type": "integer"
         },
         "course_section_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The unique id of the user's section.",
+          "example": 1,
+          "type": "integer"
         },
         "enrollment_state": {
+          "description": "The state of the user's enrollment in the course.",
+          "example": "active",
           "type": "string"
         },
         "limit_privileges_to_course_section": {
+          "description": "User can only access his or her own course section.",
+          "example": true,
           "type": "boolean"
         },
         "root_account_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The unique id of the user's account.",
+          "example": 1,
+          "type": "integer"
         },
         "type": {
-          "type": "string"
-        },
-        "role": {
+          "description": "The enrollment role, for course-level permissions.",
+          "example": "StudentEnrollment",
           "type": "string"
         },
         "user_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The unique id of the user.",
+          "example": 1,
+          "type": "integer"
+        },
+        "associated_user_id": {
+          "example": null,
+          "type": "integer"
+        },
+        "role": {
+          "description": "The enrollment role, for course-level permissions",
+          "example": null,
+          "type": "string"
         },
         "updated_at": {
-          "type": "string",
-          "format": "date-time"
-        },
-        "created_at": {
-          "type": "string",
-          "format": "date-time"
+          "description": "The updated time of the enrollment, in ISO8601 format.",
+          "example": "2012-04-18T23:08:51Z",
+          "type": "datetime"
         },
         "last_activity_at": {
-          "type": "string",
-          "format": "date-time"
+          "description": "The last activity time of the user for the enrollment, in ISO8601 format.",
+          "example": "2012-04-18T23:08:51Z",
+          "type": "datetime"
         },
         "html_url": {
+          "description": "The URL to the Canvas web UI page for this course enrollment.",
+          "example": "https://...",
           "type": "string"
         },
         "grades": {
-          "type": "string"
+          "description": "The URL to the Canvas web UI page the grades associated with this enrollment.",
+          "$ref": "Grade"
         },
         "user": {
-          "type": "string"
+          "description": "A description of the user.",
+          "type": "User"
         }
       }
     }

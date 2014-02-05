@@ -323,7 +323,7 @@ module Pandarus
       end
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
-      report.new(response)
+      Report.new(response)
     end
     def index_of_reports(account_id,report,opts={})
       query_param_keys = [
@@ -459,8 +459,7 @@ module Pandarus
       end
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
-      response
-      
+      response.map {|response|Account.new(response)}
     end
     def get_single_account(id,opts={})
       query_param_keys = [
@@ -490,8 +489,7 @@ module Pandarus
       end
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
-      response
-      
+      Account.new(response)
     end
     def get_the_sub_accounts_of_account(account_id,opts={})
       query_param_keys = [
@@ -521,8 +519,7 @@ module Pandarus
       end
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
-      response
-      
+      response.map {|response|Account.new(response)}
     end
     def list_active_courses_in_account(account_id,opts={})
       query_param_keys = [
@@ -4001,8 +3998,7 @@ module Pandarus
       end
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
-      response
-      
+      response.map {|response|Conversation.new(response)}
     end
     def create_conversation(recipients,body,group_conversation,attachment_ids,media_comment_id,media_comment_type,mode,opts={})
       query_param_keys = [
@@ -4059,7 +4055,7 @@ module Pandarus
       response
       
     end
-    def x(opts={})
+    def get_running_batches(opts={})
       query_param_keys = [
         
       ]
@@ -4719,7 +4715,7 @@ module Pandarus
       page_params_store(:get, path)
       response.map {|response|User.new(response)}
     end
-    def x(course_id,id,opts={})
+    def get_single_user(course_id,id,opts={})
       query_param_keys = [
         
       ]
@@ -10220,7 +10216,7 @@ module Pandarus
       end
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
-      response.map {|response|Groups.new(response)}
+      response.map {|response|Group.new(response)}
     end
     def list_users_in_group_category(group_category_id,opts={})
       query_param_keys = [
@@ -17332,8 +17328,7 @@ module Pandarus
       end
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
-      response
-      
+      Profile.new(response)
     end
     def list_avatar_options(user_id,opts={})
       query_param_keys = [
@@ -17363,8 +17358,7 @@ module Pandarus
       end
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
-      response
-      
+      response.map {|response|Avatar.new(response)}
     end
     def list_user_page_views(user_id,opts={})
       query_param_keys = [

@@ -8,16 +8,16 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :created_at => {:external => "created_at", :container => false, :type => "Date"},
-        :sent_at => {:external => "sent_at", :container => false, :type => "Date"},
-        :workflow_state => {:external => "workflow_state", :container => false, :type => nil},
-        :from => {:external => "from", :container => false, :type => nil},
-        :to => {:external => "to", :container => false, :type => nil},
-        :reply_to => {:external => "reply_to", :container => false, :type => nil},
-        :subject => {:external => "subject", :container => false, :type => nil},
-        :body => {:external => "body", :container => false, :type => nil},
-        :html_body => {:external => "html_body", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :created_at => {:external => "created_at", :container => false, :type => "DateTime"},
+        :sent_at => {:external => "sent_at", :container => false, :type => "DateTime"},
+        :workflow_state => {:external => "workflow_state", :container => false, :type => "String"},
+        :from => {:external => "from", :container => false, :type => "String"},
+        :to => {:external => "to", :container => false, :type => "String"},
+        :reply_to => {:external => "reply_to", :container => false, :type => "String"},
+        :subject => {:external => "subject", :container => false, :type => "String"},
+        :body => {:external => "body", :container => false, :type => "String"},
+        :html_body => {:external => "html_body", :container => false, :type => "String"}
 
       }
     end

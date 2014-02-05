@@ -123,16 +123,29 @@
   "models": {
     "Admin": {
       "id": "Admin",
+      "description": "",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The unique identifier for the account role/user assignment.",
+          "example": 1023,
+          "type": "integer"
         },
         "role": {
+          "description": "The account role assigned. This can be 'AccountAdmin' or a user-defined role created by the Roles API.",
+          "example": "AccountAdmin",
           "type": "string"
         },
         "user": {
-          "type": "string"
+          "description": "The user the role is assigned to. See the Users API for details.",
+          "$ref": "User"
+        },
+        "status": {
+          "description": "The status of the account role/user assignment.",
+          "type": "string",
+          "example": "deleted"
         }
       }
     }

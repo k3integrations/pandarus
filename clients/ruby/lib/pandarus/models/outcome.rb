@@ -8,16 +8,16 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :url => {:external => "url", :container => false, :type => nil},
-        :context_id => {:external => "context_id", :container => false, :type => nil},
-        :context_type => {:external => "context_type", :container => false, :type => nil},
-        :title => {:external => "title", :container => false, :type => nil},
-        :description => {:external => "description", :container => false, :type => nil},
-        :vendor_guid => {:external => "vendor_guid", :container => false, :type => nil},
-        :points_possible => {:external => "points_possible", :container => false, :type => nil},
-        :mastery_points => {:external => "mastery_points", :container => false, :type => nil},
-        :ratings => {:external => "ratings", :container => false, :type => nil},
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :url => {:external => "url", :container => false, :type => "String"},
+        :context_id => {:external => "context_id", :container => false, :type => "Integer"},
+        :context_type => {:external => "context_type", :container => false, :type => "String"},
+        :title => {:external => "title", :container => false, :type => "String"},
+        :description => {:external => "description", :container => false, :type => "String"},
+        :vendor_guid => {:external => "vendor_guid", :container => false, :type => "String"},
+        :points_possible => {:external => "points_possible", :container => false, :type => "Integer"},
+        :mastery_points => {:external => "mastery_points", :container => false, :type => "Integer"},
+        :ratings => {:external => "ratings", :container => true, :type => "RubricRating"},
         :can_edit => {:external => "can_edit", :container => false, :type => nil}
 
       }

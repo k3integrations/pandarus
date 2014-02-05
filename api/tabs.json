@@ -132,28 +132,41 @@
   "models": {
     "Tab": {
       "id": "Tab",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "html_url": {
+          "example": "/courses/1/external_tools/4",
           "type": "string"
         },
         "id": {
+          "example": "context_external_tool_4",
           "type": "string"
         },
         "label": {
+          "example": "WordPress",
+          "type": "string"
+        },
+        "type": {
+          "example": "external",
           "type": "string"
         },
         "hidden": {
+          "description": "only included if true",
+          "example": true,
           "type": "boolean"
         },
         "visibility": {
+          "description": "possible values are: public, members, admins, and none",
+          "example": "public",
           "type": "string"
         },
         "position": {
-          "type": "integer",
-          "format": "int64"
-        },
-        "type": {
-          "type": "string"
+          "description": "1 based",
+          "example": 2,
+          "type": "integer"
         }
       }
     }

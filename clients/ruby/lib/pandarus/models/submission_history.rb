@@ -8,8 +8,8 @@ module Pandarus
 
     def self.attribute_map
       {
-        :submission_id => {:external => "submission_id", :container => false, :type => nil},
-        :versions => {:external => "versions", :container => false, :type => nil}
+        :submission_id => {:external => "submission_id", :container => false, :type => "Integer"},
+        :versions => {:external => "versions", :container => true, :type => "Integer"}
 
       }
     end

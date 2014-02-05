@@ -8,20 +8,20 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :module_id => {:external => "module_id", :container => false, :type => nil},
-        :position => {:external => "position", :container => false, :type => nil},
-        :title => {:external => "title", :container => false, :type => nil},
-        :indent => {:external => "indent", :container => false, :type => nil},
-        :type => {:external => "type", :container => false, :type => nil},
-        :content_id => {:external => "content_id", :container => false, :type => nil},
-        :html_url => {:external => "html_url", :container => false, :type => nil},
-        :url => {:external => "url", :container => false, :type => nil},
-        :page_url => {:external => "page_url", :container => false, :type => nil},
-        :external_url => {:external => "external_url", :container => false, :type => nil},
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :module_id => {:external => "module_id", :container => false, :type => "Integer"},
+        :position => {:external => "position", :container => false, :type => "Integer"},
+        :title => {:external => "title", :container => false, :type => "String"},
+        :indent => {:external => "indent", :container => false, :type => "Integer"},
+        :type => {:external => "type", :container => false, :type => "String"},
+        :content_id => {:external => "content_id", :container => false, :type => "Integer"},
+        :html_url => {:external => "html_url", :container => false, :type => "String"},
+        :url => {:external => "url", :container => false, :type => "String"},
+        :page_url => {:external => "page_url", :container => false, :type => "String"},
+        :external_url => {:external => "external_url", :container => false, :type => "String"},
         :new_tab => {:external => "new_tab", :container => false, :type => nil},
-        :completion_requirement => {:external => "completion_requirement", :container => false, :type => nil},
-        :content_details => {:external => "content_details", :container => false, :type => nil}
+        :completion_requirement => {:external => "completion_requirement", :container => false, :type => "CompletionRequirement"},
+        :content_details => {:external => "content_details", :container => false, :type => "ContentDetails"}
 
       }
     end

@@ -8,13 +8,13 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :created_at => {:external => "created_at", :container => false, :type => nil},
-        :ended_at => {:external => "ended_at", :container => false, :type => nil},
-        :updated_at => {:external => "updated_at", :container => false, :type => nil},
-        :workflow_state => {:external => "workflow_state", :container => false, :type => nil},
-        :data => {:external => "data", :container => false, :type => nil},
-        :progress => {:external => "progress", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :created_at => {:external => "created_at", :container => false, :type => "DateTime"},
+        :ended_at => {:external => "ended_at", :container => false, :type => "DateTime"},
+        :updated_at => {:external => "updated_at", :container => false, :type => "DateTime"},
+        :workflow_state => {:external => "workflow_state", :container => false, :type => "String"},
+        :data => {:external => "data", :container => false, :type => "SisImportData"},
+        :progress => {:external => "progress", :container => false, :type => "String"}
 
       }
     end

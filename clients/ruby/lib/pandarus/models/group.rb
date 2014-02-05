@@ -8,20 +8,20 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :name => {:external => "name", :container => false, :type => nil},
-        :description => {:external => "description", :container => false, :type => nil},
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :name => {:external => "name", :container => false, :type => "String"},
+        :description => {:external => "description", :container => false, :type => "String"},
         :is_public => {:external => "is_public", :container => false, :type => nil},
         :followed_by_user => {:external => "followed_by_user", :container => false, :type => nil},
-        :join_level => {:external => "join_level", :container => false, :type => nil},
-        :members_count => {:external => "members_count", :container => false, :type => nil},
-        :avatar_url => {:external => "avatar_url", :container => false, :type => nil},
-        :context_type => {:external => "context_type", :container => false, :type => nil},
-        :course_id => {:external => "course_id", :container => false, :type => nil},
-        :role => {:external => "role", :container => false, :type => nil},
-        :group_category_id => {:external => "group_category_id", :container => false, :type => nil},
-        :storage_quota_mb => {:external => "storage_quota_mb", :container => false, :type => nil},
-        :permissions => {:external => "permissions", :container => false, :type => nil}
+        :join_level => {:external => "join_level", :container => false, :type => "String"},
+        :members_count => {:external => "members_count", :container => false, :type => "Integer"},
+        :avatar_url => {:external => "avatar_url", :container => false, :type => "String"},
+        :context_type => {:external => "context_type", :container => false, :type => "String"},
+        :course_id => {:external => "course_id", :container => false, :type => "Integer"},
+        :role => {:external => "role", :container => false, :type => "String"},
+        :group_category_id => {:external => "group_category_id", :container => false, :type => "Integer"},
+        :storage_quota_mb => {:external => "storage_quota_mb", :container => false, :type => "Integer"},
+        :permissions => {:external => "permissions", :container => false, :type => "Map"}
 
       }
     end

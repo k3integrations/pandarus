@@ -8,10 +8,10 @@ module Pandarus
 
     def self.attribute_map
       {
-        :href => {:external => "href", :container => false, :type => nil},
-        :notification => {:external => "notification", :container => false, :type => nil},
-        :category => {:external => "category", :container => false, :type => nil},
-        :frequency => {:external => "frequency", :container => false, :type => nil}
+        :href => {:external => "href", :container => false, :type => "String"},
+        :notification => {:external => "notification", :container => false, :type => "String"},
+        :category => {:external => "category", :container => false, :type => "String"},
+        :frequency => {:external => "frequency", :container => false, :type => "String"}
 
       }
     end

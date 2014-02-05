@@ -19,7 +19,10 @@
           "parameters": [
 
           ],
-          "type": "void"
+          "type": "array",
+          "items": {
+            "$ref": "Account"
+          }
         }
       ]
     },
@@ -42,7 +45,7 @@
               "required": true
             }
           ],
-          "type": "void"
+          "type": "Account"
         }
       ]
     },
@@ -73,7 +76,10 @@
               "required": false
             }
           ],
-          "type": "void"
+          "type": "array",
+          "items": {
+            "$ref": "Account"
+          }
         }
       ]
     },

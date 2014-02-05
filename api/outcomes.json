@@ -111,42 +111,65 @@
   "models": {
     "Outcome": {
       "id": "Outcome",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the ID of the outcome",
+          "example": 1,
+          "type": "integer"
         },
         "url": {
+          "description": "the URL for fetching/updating the outcome. should be treated as opaque",
+          "example": "/api/v1/outcomes/1",
           "type": "string"
         },
         "context_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the context owning the outcome. may be null for global outcomes",
+          "example": 1,
+          "type": "integer"
         },
         "context_type": {
+          "example": "Account",
           "type": "string"
         },
         "title": {
+          "description": "title of the outcome",
+          "example": "Outcome title",
           "type": "string"
         },
         "description": {
+          "description": "description of the outcome. omitted in the abbreviated form.",
+          "example": "Outcome description",
           "type": "string"
         },
         "vendor_guid": {
+          "description": "A custom GUID for the learning standard.",
+          "example": "customid9000",
           "type": "string"
         },
         "points_possible": {
-          "type": "integer",
-          "format": "int64"
+          "description": "maximum points possible. included only if the outcome embeds a rubric criterion. omitted in the abbreviated form.",
+          "example": 5,
+          "type": "integer"
         },
         "mastery_points": {
-          "type": "integer",
-          "format": "int64"
+          "description": "points necessary to demonstrate mastery outcomes. included only if the outcome embeds a rubric criterion. omitted in the abbreviated form.",
+          "example": 3,
+          "type": "integer"
         },
         "ratings": {
-          "type": "string"
+          "description": "possible ratings for this outcome. included only if the outcome embeds a rubric criterion. omitted in the abbreviated form.",
+          "type": "array",
+          "items": {
+            "$ref": "RubricRating"
+          }
         },
         "can_edit": {
+          "description": "whether the current user can update the outcome",
+          "example": true,
           "type": "boolean"
         }
       }

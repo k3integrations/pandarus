@@ -1143,71 +1143,115 @@
   "models": {
     "Page": {
       "id": "Page",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "url": {
+          "description": "the unique locator for the page",
+          "example": "my-page-title",
           "type": "string"
         },
         "title": {
+          "description": "the title of the page",
+          "example": "My Page Title",
           "type": "string"
         },
         "created_at": {
-          "type": "string"
+          "description": "the creation date for the page",
+          "example": "2012-08-06T16:46:33-06:00",
+          "type": "datetime"
         },
         "updated_at": {
-          "type": "string"
+          "description": "the date the page was last updated",
+          "example": "2012-08-08T14:25:20-06:00",
+          "type": "datetime"
         },
         "hide_from_students": {
+          "description": "whether this page is hidden from students (note: students will never see this true; pages hidden from them will be omitted from results)",
+          "example": false,
           "type": "boolean"
         },
         "editing_roles": {
+          "description": "roles allowed to edit the page; comma-separated list comprising a combination of 'teachers', 'students', 'members', and/or 'public' if not supplied, course defaults are used",
+          "example": "teachers,students",
           "type": "string"
         },
         "last_edited_by": {
-          "type": "string"
+          "description": "the User who last edited the page (this may not be present if the page was imported from another system)",
+          "$ref": "User"
         },
         "body": {
+          "description": "the page content, in HTML (present when requesting a single page; omitted when listing pages)",
+          "example": "<p>Page Content</p>",
           "type": "string"
         },
         "published": {
+          "description": "whether the page is published (true) or draft state (false).",
+          "example": true,
           "type": "boolean"
         },
         "front_page": {
+          "description": "whether this page is the front page for the wiki",
+          "example": false,
           "type": "boolean"
         },
         "locked_for_user": {
+          "description": "Whether or not this is locked for the user.",
+          "example": false,
           "type": "boolean"
         },
         "lock_info": {
-          "type": "string"
+          "description": "(Optional) Information for the user about the lock. Present when locked_for_user is true.",
+          "$ref": "LockInfo"
         },
         "lock_explanation": {
+          "description": "(Optional) An explanation of why this is locked for the user. Present when locked_for_user is true.",
+          "example": "This page is locked until September 1 at 12:00am",
           "type": "string"
         }
       }
     },
     "PageRevision": {
       "id": "PageRevision",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "revision_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "an identifier for this revision of the page",
+          "example": 7,
+          "type": "integer"
         },
         "updated_at": {
-          "type": "string"
+          "description": "the time when this revision was saved",
+          "example": "2012-08-07T11:23:58-06:00",
+          "type": "datetime"
         },
         "latest": {
+          "description": "whether this is the latest revision or not",
+          "example": true,
           "type": "boolean"
         },
         "edited_by": {
-          "type": "string"
+          "description": "the User who saved this revision, if applicable (this may not be present if the page was imported from another system)",
+          "$ref": "User"
         },
         "url": {
+          "description": "the following fields are not included in the index action and may be omitted from the show action via summary=1 the historic url of the page",
+          "example": "old-page-title",
           "type": "string"
         },
         "title": {
+          "description": "the historic page title",
+          "example": "Old Page Title",
           "type": "string"
         },
         "body": {
+          "description": "the historic page contents",
+          "example": "<p>Old Page Content</p>",
           "type": "string"
         }
       }

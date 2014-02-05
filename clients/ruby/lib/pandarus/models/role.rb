@@ -8,11 +8,11 @@ module Pandarus
 
     def self.attribute_map
       {
-        :role => {:external => "role", :container => false, :type => nil},
-        :base_role_type => {:external => "base_role_type", :container => false, :type => nil},
-        :account => {:external => "account", :container => false, :type => nil},
-        :workflow_state => {:external => "workflow_state", :container => false, :type => nil},
-        :permissions => {:external => "permissions", :container => false, :type => nil}
+        :role => {:external => "role", :container => false, :type => "String"},
+        :base_role_type => {:external => "base_role_type", :container => false, :type => "String"},
+        :account => {:external => "account", :container => false, :type => "Account"},
+        :workflow_state => {:external => "workflow_state", :container => false, :type => "String"},
+        :permissions => {:external => "permissions", :container => false, :type => "Map"}
 
       }
     end

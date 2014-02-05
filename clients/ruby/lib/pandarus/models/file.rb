@@ -8,22 +8,22 @@ module Pandarus
 
     def self.attribute_map
       {
-        :size => {:external => "size", :container => false, :type => nil},
-        :content_type => {:external => "content-type", :container => false, :type => nil},
-        :url => {:external => "url", :container => false, :type => nil},
-        :id => {:external => "id", :container => false, :type => nil},
-        :display_name => {:external => "display_name", :container => false, :type => nil},
-        :created_at => {:external => "created_at", :container => false, :type => "Date"},
-        :updated_at => {:external => "updated_at", :container => false, :type => "Date"},
-        :unlock_at => {:external => "unlock_at", :container => false, :type => nil},
+        :size => {:external => "size", :container => false, :type => "Integer"},
+        :content_type => {:external => "content-type", :container => false, :type => "String"},
+        :url => {:external => "url", :container => false, :type => "String"},
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :display_name => {:external => "display_name", :container => false, :type => "String"},
+        :created_at => {:external => "created_at", :container => false, :type => "DateTime"},
+        :updated_at => {:external => "updated_at", :container => false, :type => "DateTime"},
+        :unlock_at => {:external => "unlock_at", :container => false, :type => "DateTime"},
         :locked => {:external => "locked", :container => false, :type => nil},
         :hidden => {:external => "hidden", :container => false, :type => nil},
-        :lock_at => {:external => "lock_at", :container => false, :type => nil},
+        :lock_at => {:external => "lock_at", :container => false, :type => "DateTime"},
         :locked_for_user => {:external => "locked_for_user", :container => false, :type => nil},
-        :lock_info => {:external => "lock_info", :container => false, :type => nil},
-        :lock_explanation => {:external => "lock_explanation", :container => false, :type => nil},
+        :lock_info => {:external => "lock_info", :container => false, :type => "LockInfo"},
+        :lock_explanation => {:external => "lock_explanation", :container => false, :type => "String"},
         :hidden_for_user => {:external => "hidden_for_user", :container => false, :type => nil},
-        :thumbnail_url => {:external => "thumbnail_url", :container => false, :type => nil}
+        :thumbnail_url => {:external => "thumbnail_url", :container => false, :type => "String"}
 
       }
     end

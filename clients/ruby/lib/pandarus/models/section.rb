@@ -8,13 +8,13 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :name => {:external => "name", :container => false, :type => nil},
-        :sis_section_id => {:external => "sis_section_id", :container => false, :type => nil},
-        :course_id => {:external => "course_id", :container => false, :type => nil},
-        :start_at => {:external => "start_at", :container => false, :type => nil},
-        :end_at => {:external => "end_at", :container => false, :type => nil},
-        :nonxlist_course_id => {:external => "nonxlist_course_id", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :name => {:external => "name", :container => false, :type => "String"},
+        :sis_section_id => {:external => "sis_section_id", :container => false, :type => "String"},
+        :course_id => {:external => "course_id", :container => false, :type => "Integer"},
+        :start_at => {:external => "start_at", :container => false, :type => "DateTime"},
+        :end_at => {:external => "end_at", :container => false, :type => "DateTime"},
+        :nonxlist_course_id => {:external => "nonxlist_course_id", :container => false, :type => "Integer"}
 
       }
     end

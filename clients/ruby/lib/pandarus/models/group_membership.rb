@@ -8,10 +8,10 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :group_id => {:external => "group_id", :container => false, :type => nil},
-        :user_id => {:external => "user_id", :container => false, :type => nil},
-        :workflow_state => {:external => "workflow_state", :container => false, :type => nil},
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :group_id => {:external => "group_id", :container => false, :type => "Integer"},
+        :user_id => {:external => "user_id", :container => false, :type => "Integer"},
+        :workflow_state => {:external => "workflow_state", :container => false, :type => "String"},
         :moderator => {:external => "moderator", :container => false, :type => nil},
         :just_created => {:external => "just_created", :container => false, :type => nil}
 

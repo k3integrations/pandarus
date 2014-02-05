@@ -1,5 +1,5 @@
 require_relative 'spec_helper'
-require 'pandarus/api_base'
+require 'pandarus'
 
 describe Pandarus::APIBase do
   context "underscores_to_square_brackets" do

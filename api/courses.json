@@ -512,9 +512,9 @@
       "operations": [
         {
           "method": "GET",
-          "summary": "",
+          "summary": "Get single user",
           "notes": "Return information on a single user.\n\nAccepts the same include[] parameters as the :users: action, and returns a\nsingle user with the same fields as that action.",
-          "nickname": "",
+          "nickname": "get_single_user",
           "parameters": [
             {
               "paramType": "path",
@@ -1001,99 +1001,190 @@
     }
   ],
   "models": {
-    "Course": {
-      "id": "Course",
+    "Term": {
+      "id": "Term",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "example": 1,
+          "type": "integer"
+        },
+        "name": {
+          "example": "Default Term",
+          "type": "string"
+        },
+        "start_at": {
+          "example": "2012-06-01T00:00:00-06:00",
+          "type": "datetime"
+        },
+        "end_at": {
+          "type": "datetime"
+        }
+      }
+    },
+    "Course": {
+      "id": "Course",
+      "description": "",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "description": "the unique identifier for the course",
+          "example": 370663,
+          "type": "integer"
         },
         "sis_course_id": {
+          "description": "the SIS identifier for the course, if defined",
           "type": "string"
         },
         "name": {
+          "description": "the full name of the course",
+          "example": "InstructureCon 2012",
           "type": "string"
         },
         "course_code": {
+          "description": "the course code",
+          "example": "INSTCON12",
           "type": "string"
         },
         "workflow_state": {
-          "type": "string"
+          "description": "the current state of the course one of 'unpublished', 'available', 'completed', or 'deleted'",
+          "example": "available",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "unpublished",
+              "available",
+              "completed",
+              "deleted"
+            ]
+          }
         },
         "account_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the account associated with the course",
+          "example": 81259,
+          "type": "integer"
         },
         "root_account_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the root account associated with the course",
+          "example": 81259,
+          "type": "integer"
         },
         "start_at": {
-          "type": "string"
+          "description": "the start date for the course, if applicable",
+          "example": "2012-06-01T00:00:00-06:00",
+          "type": "datetime"
         },
         "end_at": {
-          "type": "string"
+          "description": "the end date for the course, if applicable",
+          "example": "2012-09-01T00:00:00-06:00",
+          "type": "datetime"
         },
         "enrollments": {
-          "type": "string"
+          "description": "A list of enrollments linking the current user to the course. for student enrollments, grading information may be included if include[]=total_scores",
+          "type": "array",
+          "items": {
+            "$ref": "Enrollment"
+          }
         },
         "calendar": {
-          "type": "string"
+          "description": "course calendar",
+          "$ref": "CalendarLink"
         },
         "default_view": {
-          "type": "string"
+          "description": "the type of page that users will see when they first visit the course - 'feed': Recent Activity Dashboard - 'wiki': Wiki Front Page - 'modules': Course Modules/Sections Page - 'assignments': Course Assignments List - 'syllabus': Course Syllabus Page other types may be added in the future",
+          "example": "feed",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "feed",
+              "wiki",
+              "modules",
+              "syllabus",
+              "assignments"
+            ]
+          }
         },
         "syllabus_body": {
+          "description": "optional: user-generated HTML for the course syllabus",
+          "example": "<p>syllabus html goes here</p>",
           "type": "string"
         },
         "needs_grading_count": {
-          "type": "integer",
-          "format": "int64"
+          "description": "optional: the number of submissions needing grading returned only if the current user has grading rights and include[]=needs_grading_count",
+          "example": 17,
+          "type": "integer"
         },
         "term": {
-          "type": "string"
+          "description": "optional: the name of the enrollment term for the course returned only if include[]=term",
+          "$ref": "Term"
         },
         "apply_assignment_group_weights": {
+          "description": "weight final grade based on assignment group percentages",
+          "example": true,
           "type": "boolean"
         },
         "permissions": {
-          "type": "string"
+          "description": "optional: the permissions the user has for the course. returned only for a single course and include[]=permissions",
+          "example": "{\"create_discussion_topic\"=>true}",
+          "type": "map",
+          "key": {
+            "type": "string"
+          },
+          "value": {
+            "type": "boolean"
+          }
         },
         "is_public": {
+          "example": true,
           "type": "boolean"
         },
         "public_syllabus": {
+          "example": true,
           "type": "boolean"
         },
         "public_description": {
+          "example": "Come one, come all to InstructureCon 2012!",
           "type": "string"
         },
         "storage_quota_mb": {
-          "type": "integer",
-          "format": "int64"
+          "example": 5,
+          "type": "integer"
         },
         "hide_final_grades": {
+          "example": false,
           "type": "boolean"
         },
         "license": {
+          "example": "Creative Commons",
           "type": "string"
         },
         "allow_student_assignment_edits": {
+          "example": false,
           "type": "boolean"
         },
         "allow_wiki_comments": {
+          "example": false,
           "type": "boolean"
         },
         "allow_student_forum_attachments": {
+          "example": false,
           "type": "boolean"
         },
         "open_enrollment": {
+          "example": true,
           "type": "boolean"
         },
         "self_enrollment": {
+          "example": false,
           "type": "boolean"
         },
         "restrict_enrollments_to_course_dates": {
+          "example": false,
           "type": "boolean"
         }
       }

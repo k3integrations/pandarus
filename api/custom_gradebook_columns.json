@@ -269,28 +269,42 @@
   "models": {
     "CustomColumn": {
       "id": "CustomColumn",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "title": {
+          "description": "header text",
+          "example": "Stuff",
           "type": "string"
         },
         "position": {
-          "type": "integer",
-          "format": "int64"
+          "description": "column order",
+          "example": 1,
+          "type": "integer"
         },
         "hidden": {
+          "description": "won't be displayed if hidden is true",
+          "example": false,
           "type": "boolean"
         }
       }
     },
     "ColumnDatum": {
       "id": "ColumnDatum",
+      "description": "ColumnDatum objects contain the entry for a column for each user.",
+      "required": [
+
+      ],
       "properties": {
         "content": {
+          "example": "Nut allergy",
           "type": "string"
         },
         "user_id": {
-          "type": "integer",
-          "format": "int64"
+          "example": 2,
+          "type": "integer"
         }
       }
     }

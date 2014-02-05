@@ -31,6 +31,16 @@ object RubyCanvasCodegen extends BasicRubyGenerator {
   override def toApiName(name: String) = name(0).toUpper + name.substring(1)
   override def toModelFilename(name: String) = toUnderscore(name).stripPrefix("_")
 
+  override def typeMapping = Map(
+    "float" -> "Float",
+    // "long" -> "long",
+    "double" -> "Float",
+    "Array" -> "Array",
+    // "boolean" -> "bool",
+    "string" -> "String",
+    "datetime" -> "DateTime"
+  )
+
   override def toVarName(name: String): String = {
     toUnderscore(name).
       replace("-", "_").

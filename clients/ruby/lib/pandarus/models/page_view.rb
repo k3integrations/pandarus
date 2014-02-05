@@ -8,21 +8,21 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :url => {:external => "url", :container => false, :type => nil},
-        :context_type => {:external => "context_type", :container => false, :type => nil},
-        :asset_type => {:external => "asset_type", :container => false, :type => nil},
-        :controller => {:external => "controller", :container => false, :type => nil},
-        :action => {:external => "action", :container => false, :type => nil},
+        :id => {:external => "id", :container => false, :type => "String"},
+        :url => {:external => "url", :container => false, :type => "String"},
+        :context_type => {:external => "context_type", :container => false, :type => "String"},
+        :asset_type => {:external => "asset_type", :container => false, :type => "String"},
+        :controller => {:external => "controller", :container => false, :type => "String"},
+        :action => {:external => "action", :container => false, :type => "String"},
         :contributed => {:external => "contributed", :container => false, :type => nil},
-        :interaction_seconds => {:external => "interaction_seconds", :container => false, :type => nil},
-        :created_at => {:external => "created_at", :container => false, :type => "Datetime"},
+        :interaction_seconds => {:external => "interaction_seconds", :container => false, :type => "Float"},
+        :created_at => {:external => "created_at", :container => false, :type => "DateTime"},
         :user_request => {:external => "user_request", :container => false, :type => nil},
-        :render_time => {:external => "render_time", :container => false, :type => nil},
-        :user_agent => {:external => "user_agent", :container => false, :type => nil},
+        :render_time => {:external => "render_time", :container => false, :type => "Float"},
+        :user_agent => {:external => "user_agent", :container => false, :type => "String"},
         :participated => {:external => "participated", :container => false, :type => nil},
-        :http_method => {:external => "http_method", :container => false, :type => nil},
-        :remote_ip => {:external => "remote_ip", :container => false, :type => nil},
+        :http_method => {:external => "http_method", :container => false, :type => "String"},
+        :remote_ip => {:external => "remote_ip", :container => false, :type => "String"},
         :links => {:external => "links", :container => false, :type => "PageViewLinks"}
 
       }

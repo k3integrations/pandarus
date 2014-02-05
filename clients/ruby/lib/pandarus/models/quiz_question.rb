@@ -11,14 +11,14 @@ module Pandarus
         :id => {:external => "id", :container => false, :type => nil},
         :quiz_id => {:external => "quiz_id", :container => false, :type => nil},
         :position => {:external => "position", :container => false, :type => nil},
-        :question_name => {:external => "question_name", :container => false, :type => nil},
-        :question_type => {:external => "question_type", :container => false, :type => nil},
-        :question_text => {:external => "question_text", :container => false, :type => nil},
+        :question_name => {:external => "question_name", :container => false, :type => "String"},
+        :question_type => {:external => "question_type", :container => false, :type => "String"},
+        :question_text => {:external => "question_text", :container => false, :type => "String"},
         :points_possible => {:external => "points_possible", :container => false, :type => nil},
-        :correct_comments => {:external => "correct_comments", :container => false, :type => nil},
-        :incorrect_comments => {:external => "incorrect_comments", :container => false, :type => nil},
-        :neutral_comments => {:external => "neutral_comments", :container => false, :type => nil},
-        :answers => {:external => "answers", :container => true, :type => nil}
+        :correct_comments => {:external => "correct_comments", :container => false, :type => "String"},
+        :incorrect_comments => {:external => "incorrect_comments", :container => false, :type => "String"},
+        :neutral_comments => {:external => "neutral_comments", :container => false, :type => "String"},
+        :answers => {:external => "answers", :container => true, :type => "Answer"}
 
       }
     end

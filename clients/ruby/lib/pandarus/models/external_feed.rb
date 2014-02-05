@@ -8,12 +8,12 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :display_name => {:external => "display_name", :container => false, :type => nil},
-        :url => {:external => "url", :container => false, :type => nil},
-        :header_match => {:external => "header_match", :container => false, :type => nil},
-        :created_at => {:external => "created_at", :container => false, :type => nil},
-        :verbosity => {:external => "verbosity", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :display_name => {:external => "display_name", :container => false, :type => "String"},
+        :url => {:external => "url", :container => false, :type => "String"},
+        :header_match => {:external => "header_match", :container => false, :type => "String"},
+        :created_at => {:external => "created_at", :container => false, :type => "DateTime"},
+        :verbosity => {:external => "verbosity", :container => false, :type => "String"}
 
       }
     end

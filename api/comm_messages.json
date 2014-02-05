@@ -53,38 +53,71 @@
   "models": {
     "CommMessage": {
       "id": "CommMessage",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The ID of the CommMessage.",
+          "example": 42,
+          "type": "integer"
         },
         "created_at": {
-          "type": "string",
-          "format": "date-time"
+          "description": "The date and time this message was created",
+          "example": "2013-03-19T21:00:00Z",
+          "type": "datetime"
         },
         "sent_at": {
-          "type": "string",
-          "format": "date-time"
+          "description": "The date and time this message was sent",
+          "example": "2013-03-20T22:42:00Z",
+          "type": "datetime"
         },
         "workflow_state": {
-          "type": "string"
+          "description": "The workflow state of the message. One of 'created', 'staged', 'sending', 'sent', 'bounced', 'dashboard', 'cancelled', or 'closed'",
+          "example": "sent",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "created",
+              "staged",
+              "sending",
+              "sent",
+              "bounced",
+              "dashboard",
+              "cancelled",
+              "closed"
+            ]
+          }
         },
         "from": {
+          "description": "The address that was put in the 'from' field of the message",
+          "example": "notifications@example.com",
           "type": "string"
         },
         "to": {
+          "description": "The address the message was sent to:",
+          "example": "someone@example.com",
           "type": "string"
         },
         "reply_to": {
+          "description": "The reply_to header of the message",
+          "example": "notifications+specialdata@example.com",
           "type": "string"
         },
         "subject": {
+          "description": "The message subject",
+          "example": "example subject line",
           "type": "string"
         },
         "body": {
+          "description": "The plain text body of the message",
+          "example": "This is the body of the message",
           "type": "string"
         },
         "html_body": {
+          "description": "The HTML body of the message.",
+          "example": "<html><body>This is the body of the message</body></html>",
           "type": "string"
         }
       }

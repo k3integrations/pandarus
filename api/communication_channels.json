@@ -159,27 +159,55 @@
   "models": {
     "CommunicationChannel": {
       "id": "CommunicationChannel",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The ID of the communication channel.",
+          "example": 16,
+          "type": "integer"
         },
         "address": {
+          "description": "The address, or path, of the communication channel.",
+          "example": "sheldon@caltech.example.com",
           "type": "string"
         },
         "type": {
-          "type": "string"
+          "description": "The type of communcation channel being described. Possible values are: 'email', 'sms', 'chat', 'facebook' or 'twitter'. This field determines the type of value seen in 'address'.",
+          "example": "email",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "email",
+              "sms",
+              "chat",
+              "facebook",
+              "twitter"
+            ]
+          }
         },
         "position": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The position of this communication channel relative to the user's other channels when they are ordered.",
+          "example": 1,
+          "type": "integer"
         },
         "user_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The ID of the user that owns this communication channel.",
+          "example": 1,
+          "type": "integer"
         },
         "workflow_state": {
-          "type": "string"
+          "description": "The current state of the communication channel. Possible values are: 'unconfirmed' or 'active'.",
+          "example": "active",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "unconfirmed",
+              "active"
+            ]
+          }
         }
       }
     }

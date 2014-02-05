@@ -8,20 +8,20 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :conference_type => {:external => "conference_type", :container => false, :type => nil},
-        :description => {:external => "description", :container => false, :type => nil},
-        :duration => {:external => "duration", :container => false, :type => nil},
-        :ended_at => {:external => "ended_at", :container => false, :type => "Date"},
-        :started_at => {:external => "started_at", :container => false, :type => "Date"},
-        :title => {:external => "title", :container => false, :type => nil},
-        :users => {:external => "users", :container => false, :type => nil},
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :conference_type => {:external => "conference_type", :container => false, :type => "String"},
+        :description => {:external => "description", :container => false, :type => "String"},
+        :duration => {:external => "duration", :container => false, :type => "Integer"},
+        :ended_at => {:external => "ended_at", :container => false, :type => "DateTime"},
+        :started_at => {:external => "started_at", :container => false, :type => "DateTime"},
+        :title => {:external => "title", :container => false, :type => "String"},
+        :users => {:external => "users", :container => true, :type => "Integer"},
         :has_advanced_settings => {:external => "has_advanced_settings", :container => false, :type => nil},
         :long_running => {:external => "long_running", :container => false, :type => nil},
-        :user_settings => {:external => "user_settings", :container => false, :type => nil},
-        :recordings => {:external => "recordings", :container => false, :type => nil},
-        :url => {:external => "url", :container => false, :type => nil},
-        :join_url => {:external => "join_url", :container => false, :type => nil}
+        :user_settings => {:external => "user_settings", :container => false, :type => "Map"},
+        :recordings => {:external => "recordings", :container => true, :type => "ConferenceRecording"},
+        :url => {:external => "url", :container => false, :type => "String"},
+        :join_url => {:external => "join_url", :container => false, :type => "String"}
 
       }
     end

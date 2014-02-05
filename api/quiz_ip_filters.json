@@ -42,6 +42,12 @@
   "models": {
     "QuizIPFilter": {
       "id": "QuizIPFilter",
+      "description": "",
+      "required": [
+        "name",
+        "account",
+        "filter"
+      ],
       "properties": {
         "name": {
           "description": "A unique name for the filter.",

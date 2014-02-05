@@ -8,8 +8,8 @@ module Pandarus
 
     def self.attribute_map
       {
-        :date => {:external => "date", :container => false, :type => "Date"},
-        :graders => {:external => "graders", :container => false, :type => nil}
+        :date => {:external => "date", :container => false, :type => "DateTime"},
+        :graders => {:external => "graders", :container => false, :type => "Integer"}
 
       }
     end

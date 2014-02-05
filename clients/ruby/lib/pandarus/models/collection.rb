@@ -8,12 +8,12 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :name => {:external => "name", :container => false, :type => nil},
-        :visibility => {:external => "visibility", :container => false, :type => nil},
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :name => {:external => "name", :container => false, :type => "String"},
+        :visibility => {:external => "visibility", :container => false, :type => "String"},
         :followed_by_user => {:external => "followed_by_user", :container => false, :type => nil},
-        :followers_count => {:external => "followers_count", :container => false, :type => nil},
-        :items_count => {:external => "items_count", :container => false, :type => nil}
+        :followers_count => {:external => "followers_count", :container => false, :type => "Integer"},
+        :items_count => {:external => "items_count", :container => false, :type => "Integer"}
 
       }
     end

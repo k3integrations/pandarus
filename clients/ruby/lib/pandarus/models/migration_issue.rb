@@ -8,16 +8,16 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :content_migration_url => {:external => "content_migration_url", :container => false, :type => nil},
-        :description => {:external => "description", :container => false, :type => nil},
-        :workflow_state => {:external => "workflow_state", :container => false, :type => nil},
-        :fix_issue_html_url => {:external => "fix_issue_html_url", :container => false, :type => nil},
-        :issue_type => {:external => "issue_type", :container => false, :type => nil},
-        :error_report_html_url => {:external => "error_report_html_url", :container => false, :type => nil},
-        :error_message => {:external => "error_message", :container => false, :type => nil},
-        :created_at => {:external => "created_at", :container => false, :type => nil},
-        :updated_at => {:external => "updated_at", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :content_migration_url => {:external => "content_migration_url", :container => false, :type => "String"},
+        :description => {:external => "description", :container => false, :type => "String"},
+        :workflow_state => {:external => "workflow_state", :container => false, :type => "String"},
+        :fix_issue_html_url => {:external => "fix_issue_html_url", :container => false, :type => "String"},
+        :issue_type => {:external => "issue_type", :container => false, :type => "String"},
+        :error_report_html_url => {:external => "error_report_html_url", :container => false, :type => "String"},
+        :error_message => {:external => "error_message", :container => false, :type => "String"},
+        :created_at => {:external => "created_at", :container => false, :type => "DateTime"},
+        :updated_at => {:external => "updated_at", :container => false, :type => "DateTime"}
 
       }
     end

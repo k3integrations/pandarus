@@ -648,7 +648,7 @@
               "required": true
             }
           ],
-          "type": "void"
+          "type": "Profile"
         }
       ]
     },
@@ -671,7 +671,10 @@
               "required": true
             }
           ],
-          "type": "void"
+          "type": "array",
+          "items": {
+            "$ref": "Avatar"
+          }
         }
       ]
     },
@@ -721,6 +724,10 @@
   "models": {
     "User": {
       "id": "User",
+      "description": "A Canvas user, e.g. a student, teacher, administrator, observer, etc.",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "description": "The ID of the user.",
@@ -791,22 +798,132 @@
         }
       }
     },
-    "PageViewLinks": {
-      "id": "PageViewLinks",
+    "Profile": {
+      "id": "Profile",
+      "description": "Profile details for a Canvas user.",
+      "required": [
+
+      ],
       "properties": {
         "id": {
+          "description": "The ID of the user.",
+          "example": 1234,
+          "type": "integer"
+        },
+        "name": {
+          "description": "Sample User",
+          "example": "Sample User",
           "type": "string"
         },
-        "description": {
+        "short_name": {
+          "description": "Sample User",
+          "example": "Sample User",
           "type": "string"
         },
-        "properties": {
+        "sortable_name": {
+          "description": "user, sample",
+          "example": "user, sample",
           "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "bio": {
+          "type": "string"
+        },
+        "primary_email": {
+          "description": "sample_user@example.com",
+          "example": "sample_user@example.com",
+          "type": "string"
+        },
+        "login_id": {
+          "description": "sample_user@example.com",
+          "example": "sample_user@example.com",
+          "type": "string"
+        },
+        "sis_user_id": {
+          "description": "sis1",
+          "example": "sis1",
+          "type": "string"
+        },
+        "sis_login_id": {
+          "description": "sis1-login",
+          "example": "sis1-login",
+          "type": "string"
+        },
+        "avatar_url": {
+          "description": "The avatar_url can change over time, so we recommend not caching it for more than a few hours",
+          "example": "..url..",
+          "type": "string"
+        },
+        "calendar": {
+          "$ref": "CalendarLink"
+        },
+        "time_zone": {
+          "description": "Optional: This field is only returned in certain API calls, and will return the IANA time zone name of the user's preferred timezone.",
+          "example": "America/Denver",
+          "type": "string"
+        }
+      }
+    },
+    "Avatar": {
+      "id": "Avatar",
+      "description": "Possible avatar for a user.",
+      "required": [
+        "type",
+        "url",
+        "token",
+        "display_name"
+      ],
+      "properties": {
+        "type": {
+          "description": "['gravatar'|'attachment'|'no_pic'] The type of avatar record, for categorization purposes.",
+          "example": "gravatar",
+          "type": "string"
+        },
+        "url": {
+          "description": "The url of the avatar",
+          "example": "https://secure.gravatar.com/avatar/2284...",
+          "type": "string"
+        },
+        "token": {
+          "description": "A unique representation of the avatar record which can be used to set the avatar with the user update endpoint. Note: this is an internal representation and is subject to change without notice. It should be consumed with this api endpoint and used in the user update endpoint, and should not be constructed by the client.",
+          "example": "<opaque_token>",
+          "type": "string"
+        },
+        "display_name": {
+          "description": "A textual description of the avatar record.",
+          "example": "user, sample",
+          "type": "string"
+        },
+        "id": {
+          "description": "['attachment' type only] the internal id of the attachment",
+          "example": 12,
+          "type": "integer"
+        },
+        "content-type": {
+          "description": "['attachment' type only] the content-type of the attachment.",
+          "example": "image/jpeg",
+          "type": "string"
+        },
+        "filename": {
+          "description": "['attachment' type only] the filename of the attachment",
+          "example": "profile.jpg",
+          "type": "string"
+        },
+        "size": {
+          "description": "['attachment' type only] the size of the attachment",
+          "example": 32649,
+          "type": "integer"
         }
       }
     },
     "PageView": {
       "id": "PageView",
+      "description": "The record of a user page view access in Canvas",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "description": "A UUID representing the page view.  This is also the unique request id",
@@ -889,6 +1006,45 @@
           "description": "The page view links to define the relationships",
           "type": "PageViewLinks",
           "example": "{}"
+        }
+      }
+    },
+    "PageViewLinks": {
+      "id": "PageViewLinks",
+      "description": "The links of a page view access in Canvas",
+      "required": [
+
+      ],
+      "properties": {
+        "user": {
+          "description": "The ID of the user for this page view",
+          "example": "1234",
+          "type": "integer",
+          "format": "int64"
+        },
+        "context": {
+          "description": "The ID of the context for the request (course id if context_type is Course, etc)",
+          "example": "1234",
+          "type": "integer",
+          "format": "int64"
+        },
+        "asset": {
+          "description": "The ID of the asset for the request, if any",
+          "example": "1234",
+          "type": "integer",
+          "format": "int64"
+        },
+        "real_user": {
+          "description": "The ID of the actual user who made this request, if the request was made by a user who was masquerading",
+          "example": "1234",
+          "type": "integer",
+          "format": "int64"
+        },
+        "account": {
+          "description": "The ID of the account context for this page view",
+          "example": "1234",
+          "type": "integer",
+          "format": "int64"
         }
       }
     }

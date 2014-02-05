@@ -8,19 +8,19 @@ module Pandarus
 
     def self.attribute_map
       {
-        :url => {:external => "url", :container => false, :type => nil},
-        :title => {:external => "title", :container => false, :type => nil},
-        :created_at => {:external => "created_at", :container => false, :type => nil},
-        :updated_at => {:external => "updated_at", :container => false, :type => nil},
+        :url => {:external => "url", :container => false, :type => "String"},
+        :title => {:external => "title", :container => false, :type => "String"},
+        :created_at => {:external => "created_at", :container => false, :type => "DateTime"},
+        :updated_at => {:external => "updated_at", :container => false, :type => "DateTime"},
         :hide_from_students => {:external => "hide_from_students", :container => false, :type => nil},
-        :editing_roles => {:external => "editing_roles", :container => false, :type => nil},
-        :last_edited_by => {:external => "last_edited_by", :container => false, :type => nil},
-        :body => {:external => "body", :container => false, :type => nil},
+        :editing_roles => {:external => "editing_roles", :container => false, :type => "String"},
+        :last_edited_by => {:external => "last_edited_by", :container => false, :type => "User"},
+        :body => {:external => "body", :container => false, :type => "String"},
         :published => {:external => "published", :container => false, :type => nil},
         :front_page => {:external => "front_page", :container => false, :type => nil},
         :locked_for_user => {:external => "locked_for_user", :container => false, :type => nil},
-        :lock_info => {:external => "lock_info", :container => false, :type => nil},
-        :lock_explanation => {:external => "lock_explanation", :container => false, :type => nil}
+        :lock_info => {:external => "lock_info", :container => false, :type => "LockInfo"},
+        :lock_explanation => {:external => "lock_explanation", :container => false, :type => "String"}
 
       }
     end

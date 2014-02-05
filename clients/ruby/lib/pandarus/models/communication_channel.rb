@@ -8,12 +8,12 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :address => {:external => "address", :container => false, :type => nil},
-        :type => {:external => "type", :container => false, :type => nil},
-        :position => {:external => "position", :container => false, :type => nil},
-        :user_id => {:external => "user_id", :container => false, :type => nil},
-        :workflow_state => {:external => "workflow_state", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :address => {:external => "address", :container => false, :type => "String"},
+        :type => {:external => "type", :container => false, :type => "String"},
+        :position => {:external => "position", :container => false, :type => "Integer"},
+        :user_id => {:external => "user_id", :container => false, :type => "Integer"},
+        :workflow_state => {:external => "workflow_state", :container => false, :type => "String"}
 
       }
     end

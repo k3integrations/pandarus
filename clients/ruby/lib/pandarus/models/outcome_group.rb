@@ -8,17 +8,17 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :url => {:external => "url", :container => false, :type => nil},
-        :parent_outcome_group => {:external => "parent_outcome_group", :container => false, :type => nil},
-        :context_id => {:external => "context_id", :container => false, :type => nil},
-        :context_type => {:external => "context_type", :container => false, :type => nil},
-        :title => {:external => "title", :container => false, :type => nil},
-        :description => {:external => "description", :container => false, :type => nil},
-        :vendor_guid => {:external => "vendor_guid", :container => false, :type => nil},
-        :subgroups_url => {:external => "subgroups_url", :container => false, :type => nil},
-        :outcomes_url => {:external => "outcomes_url", :container => false, :type => nil},
-        :import_url => {:external => "import_url", :container => false, :type => nil},
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :url => {:external => "url", :container => false, :type => "String"},
+        :parent_outcome_group => {:external => "parent_outcome_group", :container => false, :type => "OutcomeGroup"},
+        :context_id => {:external => "context_id", :container => false, :type => "Integer"},
+        :context_type => {:external => "context_type", :container => false, :type => "String"},
+        :title => {:external => "title", :container => false, :type => "String"},
+        :description => {:external => "description", :container => false, :type => "String"},
+        :vendor_guid => {:external => "vendor_guid", :container => false, :type => "String"},
+        :subgroups_url => {:external => "subgroups_url", :container => false, :type => "String"},
+        :outcomes_url => {:external => "outcomes_url", :container => false, :type => "String"},
+        :import_url => {:external => "import_url", :container => false, :type => "String"},
         :can_edit => {:external => "can_edit", :container => false, :type => nil}
 
       }

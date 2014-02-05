@@ -8,13 +8,13 @@ module Pandarus
 
     def self.attribute_map
       {
-        :revision_id => {:external => "revision_id", :container => false, :type => nil},
-        :updated_at => {:external => "updated_at", :container => false, :type => nil},
+        :revision_id => {:external => "revision_id", :container => false, :type => "Integer"},
+        :updated_at => {:external => "updated_at", :container => false, :type => "DateTime"},
         :latest => {:external => "latest", :container => false, :type => nil},
-        :edited_by => {:external => "edited_by", :container => false, :type => nil},
-        :url => {:external => "url", :container => false, :type => nil},
-        :title => {:external => "title", :container => false, :type => nil},
-        :body => {:external => "body", :container => false, :type => nil}
+        :edited_by => {:external => "edited_by", :container => false, :type => "User"},
+        :url => {:external => "url", :container => false, :type => "String"},
+        :title => {:external => "title", :container => false, :type => "String"},
+        :body => {:external => "body", :container => false, :type => "String"}
 
       }
     end

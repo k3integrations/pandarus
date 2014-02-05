@@ -92,13 +92,25 @@
   "models": {
     "Favorite": {
       "id": "Favorite",
+      "description": "",
+      "required": [
+        ""
+      ],
       "properties": {
         "context_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The ID of the object the Favorite refers to",
+          "example": 1170,
+          "type": "integer"
         },
         "context_type": {
-          "type": "string"
+          "description": "The type of the object the Favorite refers to (currently, only 'Course' is supported)",
+          "example": "Course",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "Course"
+            ]
+          }
         }
       }
     }

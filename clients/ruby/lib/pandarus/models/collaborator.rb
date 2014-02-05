@@ -8,9 +8,9 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :type => {:external => "type", :container => false, :type => nil},
-        :name => {:external => "name", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :type => {:external => "type", :container => false, :type => "String"},
+        :name => {:external => "name", :container => false, :type => "String"}
 
       }
     end

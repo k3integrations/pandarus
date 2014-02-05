@@ -266,6 +266,10 @@
   "models": {
     "QuizSubmissionQuestion": {
       "id": "QuizSubmissionQuestion",
+      "description": "",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
           "description": "The ID of the QuizQuestion this answer is for.",

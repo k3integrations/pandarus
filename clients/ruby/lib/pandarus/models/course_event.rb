@@ -8,11 +8,11 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :created_at => {:external => "created_at", :container => false, :type => nil},
-        :event_type => {:external => "event_type", :container => false, :type => nil},
-        :event_data => {:external => "event_data", :container => false, :type => nil},
-        :links => {:external => "links", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "String"},
+        :created_at => {:external => "created_at", :container => false, :type => "DateTime"},
+        :event_type => {:external => "event_type", :container => false, :type => "String"},
+        :event_data => {:external => "event_data", :container => false, :type => "String"},
+        :links => {:external => "links", :container => false, :type => "CourseEventLink"}
 
       }
     end

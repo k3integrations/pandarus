@@ -30,19 +30,37 @@ module Pandarus
         end
       ].inspect.sub(/^\{/,"<#{self.class} ").sub(/\}$/,'>')
     end
+
+    def vivify(constant_name, value)
+      klass = begin
+        # Try Ruby built-in constants first
+        constant_name.constantize
+      rescue NameError
+        # Pandarus models second
+        "Pandarus::#{constant_name}".constantize
+      end
+      begin
+        # Check if the constant is a method, e.g. Integer(), Float()
+        send(constant_name, value)
+      rescue NoMethodError
+        # Otherwise, it's probably a class
+        if klass.respond_to?(:parse)
+          # Some classes convert strings with "parse", e.g. DateTime
+          klass.parse(value)
+        else
+          # Most classes just need to be passed the value
+          klass.new(value)
+        end
+      end
+    end
  
     def assign(attr_name, value)
       props = attr(attr_name)
       if props[:type]
         if props[:container]
-          value = value.map{ |v| props[:type].constantize.new(v) }
+          value = value.map{ |v| vivify(props[:type], v) }
         elsif !value.nil?
-          klass = props[:type].constantize # e.g. "Date"
-          if klass.respond_to?(:parse)
-            value = klass.parse(value)
-          else
-            value = klass.new(value)
-          end
+          value = vivify(props[:type], value)
         end
       end
       instance_variable_set("@#{attr_name}", value)

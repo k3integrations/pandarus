@@ -393,19 +393,13 @@
     }
   ],
   "models": {
-    "Answer": {
-      "id": "Answer",
-      "properties": {
-        "required": {
-          "type": "string"
-        },
-        "properties": {
-          "type": "string"
-        }
-      }
-    },
     "QuizQuestion": {
       "id": "QuizQuestion",
+      "description": "",
+      "required": [
+        "id",
+        "quiz_id"
+      ],
       "properties": {
         "id": {
           "description": "The ID of the quiz question.",
@@ -465,8 +459,95 @@
           "description": "An array of available answers to display to the student.",
           "type": "array",
           "items": {
-            "$ref": "string"
+            "$ref": "Answer"
           }
+        }
+      }
+    },
+    "Answer": {
+      "id": "Answer",
+      "description": "",
+      "required": [
+        "answer_text",
+        "answer_weight"
+      ],
+      "properties": {
+        "id": {
+          "description": "The unique identifier for the answer.  Do not supply if this answer is part of a new question",
+          "example": 6656,
+          "type": "integer",
+          "format": "int64"
+        },
+        "answer_text": {
+          "description": "The text of the answer.",
+          "example": "Constantinople",
+          "type": "string"
+        },
+        "answer_weight": {
+          "description": "An integer to determine correctness of the answer. Incorrect answers should be 0, correct answers should be non-negative.",
+          "example": 100,
+          "type": "integer",
+          "format": "int64"
+        },
+        "answer_comments": {
+          "description": "Specific contextual comments for a particular answer.",
+          "example": "Remember to check your spelling prior to submitting this answer.",
+          "type": "string"
+        },
+        "text_after_answers": {
+          "description": "Used in missing word questions.  The text to follow the missing word",
+          "example": " is the capital of Utah.",
+          "type": "string"
+        },
+        "answer_match_left": {
+          "description": "Used in matching questions.  The static value of the answer that will be displayed on the left for students to match for.",
+          "example": "Salt Lake City",
+          "type": "string"
+        },
+        "answer_match_right": {
+          "description": "Used in matching questions. The correct match for the value given in answer_match_left.  Will be displayed in a dropdown with the other answer_match_right values..",
+          "example": "Utah",
+          "type": "string"
+        },
+        "matching_answer_incorrect_matches": {
+          "description": "Used in matching questions. A list of distractors, delimited by new lines (\n) that will be seeded with all the answer_match_right values.",
+          "example": "Nevada\nCalifornia\nWashington",
+          "type": "string"
+        },
+        "numerical_answer_type": {
+          "description": "Used in numerical questions.  Values can be 'exact_answer' or 'range_answer'.",
+          "example": "exact_answer",
+          "type": "string"
+        },
+        "exact": {
+          "description": "Used in numerical questions of type 'exact_answer'.  The value the answer should equal.",
+          "example": 42,
+          "type": "integer",
+          "format": "int64"
+        },
+        "margin": {
+          "description": "Used in numerical questions of type 'exact_answer'. The margin of error allowed for the student's answer.",
+          "example": 4,
+          "type": "integer",
+          "format": "int64"
+        },
+        "start": {
+          "description": "Used in numerical questions of type 'range_answer'. The start of the allowed range (inclusive).",
+          "example": 1,
+          "type": "integer",
+          "format": "int64"
+        },
+        "end": {
+          "description": "Used in numerical questions of type 'range_answer'. The end of the allowed range (inclusive).",
+          "example": 10,
+          "type": "integer",
+          "format": "int64"
+        },
+        "blank_id": {
+          "description": "Used in fill in multiple blank and multiple dropdowns questions.",
+          "example": 1170,
+          "type": "integer",
+          "format": "int64"
         }
       }
     }

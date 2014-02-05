@@ -8,17 +8,17 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :migration_type => {:external => "migration_type", :container => false, :type => nil},
-        :migration_type_title => {:external => "migration_type_title", :container => false, :type => nil},
-        :migration_issues_url => {:external => "migration_issues_url", :container => false, :type => nil},
-        :attachment => {:external => "attachment", :container => false, :type => nil},
-        :progress_url => {:external => "progress_url", :container => false, :type => nil},
-        :user_id => {:external => "user_id", :container => false, :type => nil},
-        :workflow_state => {:external => "workflow_state", :container => false, :type => nil},
-        :started_at => {:external => "started_at", :container => false, :type => nil},
-        :finished_at => {:external => "finished_at", :container => false, :type => nil},
-        :pre_attachment => {:external => "pre_attachment", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :migration_type => {:external => "migration_type", :container => false, :type => "String"},
+        :migration_type_title => {:external => "migration_type_title", :container => false, :type => "String"},
+        :migration_issues_url => {:external => "migration_issues_url", :container => false, :type => "String"},
+        :attachment => {:external => "attachment", :container => false, :type => "String"},
+        :progress_url => {:external => "progress_url", :container => false, :type => "String"},
+        :user_id => {:external => "user_id", :container => false, :type => "Integer"},
+        :workflow_state => {:external => "workflow_state", :container => false, :type => "String"},
+        :started_at => {:external => "started_at", :container => false, :type => "DateTime"},
+        :finished_at => {:external => "finished_at", :container => false, :type => "DateTime"},
+        :pre_attachment => {:external => "pre_attachment", :container => false, :type => "String"}
 
       }
     end

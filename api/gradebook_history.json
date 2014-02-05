@@ -171,126 +171,192 @@
   "models": {
     "Grader": {
       "id": "Grader",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the user_id of the user who graded the contained submissions",
+          "example": 27,
+          "type": "integer"
         },
         "name": {
+          "description": "the name of the user who graded the contained submissions",
+          "example": "Some User",
           "type": "string"
         },
         "assignments": {
-          "type": "string"
+          "description": "the assignment groups for all submissions in this response that were graded by this user.  The details are not nested inside here, but the fact that an assignment is present here means that the grader did grade submissions for this assignment on the contextual date. You can use the id of a grader and of an assignment to make another API call to find all submissions for a grader/assignment combination on a given date.",
+          "example": "[]",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
         }
       }
     },
     "Day": {
       "id": "Day",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "date": {
-          "type": "string",
-          "format": "date"
+          "description": "the date represented by this entry",
+          "example": "1986-08-09",
+          "type": "datetime"
         },
         "graders": {
-          "type": "string"
+          "description": "an array of the graders who were responsible for the submissions in this response. the submissions are grouped according to the person who graded them and the assignment they were submitted for.",
+          "example": "[]",
+          "type": "integer"
         }
       }
     },
     "SubmissionVersion": {
       "id": "SubmissionVersion",
+      "description": "A SubmissionVersion object contains all the fields that a Submission object does, plus additional fields prefixed with current_* new_* and previous_* described below.",
+      "required": [
+
+      ],
       "properties": {
         "assignment_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the id of the assignment this submissions is for",
+          "example": 22604,
+          "type": "integer"
         },
         "assignment_name": {
+          "description": "the name of the assignment this submission is for",
+          "example": "some assignment",
           "type": "string"
         },
         "body": {
+          "description": "the body text of the submission",
+          "example": "text from the submission",
           "type": "string"
         },
         "current_grade": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the most up to date grade for the current version of this submission",
+          "example": "100",
+          "type": "string"
         },
         "current_graded_at": {
-          "type": "string",
-          "format": "date-time"
+          "description": "the latest time stamp for the grading of this submission",
+          "example": "2013-01-31T18:16:31Z",
+          "type": "datetime"
         },
         "current_grader": {
+          "description": "the name of the most recent grader for this submission",
+          "example": "Grader Name",
           "type": "string"
         },
         "grade_matches_current_submission": {
+          "description": "boolean indicating whether the grade is equal to the current submission grade",
+          "example": true,
           "type": "boolean"
         },
         "graded_at": {
-          "type": "string",
-          "format": "date-time"
+          "description": "time stamp for the grading of this version of the submission",
+          "example": "2013-01-31T18:16:31Z",
+          "type": "datetime"
         },
         "grader": {
+          "description": "the name of the user who graded this version of the submission",
+          "example": "Grader Name",
           "type": "string"
         },
         "grader_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the user id of the user who graded this version of the submission",
+          "example": 67379,
+          "type": "integer"
         },
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the id of the submission of which this is a version",
+          "example": 11607,
+          "type": "integer"
         },
         "new_grade": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the updated grade provided in this version of the submission",
+          "example": "100",
+          "type": "string"
         },
         "new_graded_at": {
-          "type": "string",
-          "format": "date-time"
+          "description": "the timestamp for the grading of this version of the submission (alias for graded_at)",
+          "example": "2013-01-31T18:16:31Z",
+          "type": "datetime"
         },
         "new_grader": {
+          "description": "alias for 'grader'",
+          "example": "Grader Name",
           "type": "string"
         },
         "previous_grade": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the grade for the submission version immediately preceding this one",
+          "example": "90",
+          "type": "string"
         },
         "previous_graded_at": {
-          "type": "string",
-          "format": "date-time"
+          "description": "the timestamp for the grading of the submission version immediately preceding this one",
+          "example": "2013-01-29T12:12:12Z",
+          "type": "datetime"
         },
         "previous_grader": {
+          "description": "the name of the grader who graded the version of this submission immediately preceding this one",
+          "example": "Graded on submission",
           "type": "string"
         },
         "score": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the score for this version of the submission",
+          "example": 100,
+          "type": "integer"
         },
         "user_name": {
+          "description": "the name of the student who created this submission",
+          "example": "student@example.com",
           "type": "string"
         },
         "submission_type": {
+          "description": "the type of submission",
+          "example": "online",
           "type": "string"
         },
         "url": {
+          "description": "the url of the submission, if there is one",
           "type": "string"
         },
         "user_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the user ID of the student who created this submission",
+          "example": 67376,
+          "type": "integer"
         },
         "workflow_state": {
+          "description": "the state of the submission at this version",
+          "example": "unsubmitted",
           "type": "string"
         }
       }
     },
     "SubmissionHistory": {
       "id": "SubmissionHistory",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "submission_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the id of the submission",
+          "example": 4,
+          "type": "integer"
         },
         "versions": {
-          "type": "string"
+          "description": "an array of all the versions of this submission",
+          "example": "[]",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
         }
       }
     }

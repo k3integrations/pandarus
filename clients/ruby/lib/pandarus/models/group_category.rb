@@ -8,14 +8,14 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :name => {:external => "name", :container => false, :type => nil},
-        :role => {:external => "role", :container => false, :type => nil},
-        :self_signup => {:external => "self_signup", :container => false, :type => nil},
-        :context_type => {:external => "context_type", :container => false, :type => nil},
-        :account_id => {:external => "account_id", :container => false, :type => nil},
-        :group_limit => {:external => "group_limit", :container => false, :type => nil},
-        :progress => {:external => "progress", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :name => {:external => "name", :container => false, :type => "String"},
+        :role => {:external => "role", :container => false, :type => "String"},
+        :self_signup => {:external => "self_signup", :container => false, :type => "String"},
+        :context_type => {:external => "context_type", :container => false, :type => "String"},
+        :account_id => {:external => "account_id", :container => false, :type => "Integer"},
+        :group_limit => {:external => "group_limit", :container => false, :type => "Integer"},
+        :progress => {:external => "progress", :container => false, :type => "Progress"}
 
       }
     end

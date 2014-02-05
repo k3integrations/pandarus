@@ -500,64 +500,115 @@
   "models": {
     "Feature": {
       "id": "Feature",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "name": {
+          "description": "The symbolic name of the feature, used in FeatureFlags",
+          "example": "fancy_wickets",
           "type": "string"
         },
         "display_name": {
-          "type": "string"
-        },
-        "description": {
+          "description": "The user-visible name of the feature",
+          "example": "Fancy Wickets",
           "type": "string"
         },
         "applies_to": {
-          "type": "string"
+          "description": "The type of object the feature applies to (RootAccount, Account, Course, or User):\n * RootAccount features may only be controlled by flags on root accounts.\n * Account features may be controlled by flags on accounts and their parent accounts.\n * Course features may be controlled by flags on courses and their parent accounts.\n * User features may be controlled by flags on users and site admin only.",
+          "example": "Course",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "Course",
+              "RootAccount",
+              "Account",
+              "User"
+            ]
+          }
         },
         "enable_at": {
-          "type": "string",
-          "format": "date-time"
+          "description": "The date this feature will be globally enabled, or null if this is not planned. (This information is subject to change.)",
+          "example": "2014-01-01T00:00:00Z",
+          "type": "datetime"
         },
         "feature_flag": {
-          "type": "string"
+          "description": "The FeatureFlag that applies to the caller",
+          "example": "{\"feature\"=>\"fancy_wickets\", \"state\"=>\"allowed\", \"locking_account_id\"=>nil}",
+          "$ref": "FeatureFlag"
         },
         "root_opt_in": {
+          "description": "If true, a feature that is 'allowed' globally will be 'off' by default in root accounts. Otherwise, root accounts inherit the global 'allowed' setting, which allows sub-accounts and courses to turn features on with no root account action.",
+          "example": true,
           "type": "boolean"
         },
         "beta": {
+          "description": "Whether the feature is a beta feature",
+          "example": false,
           "type": "boolean"
         },
         "development": {
+          "description": "Whether the feature is in development",
+          "example": true,
           "type": "boolean"
         },
         "release_notes_url": {
+          "description": "A URL to the release notes describing the feature",
+          "example": "http://canvas.example.com/release_notes#fancy_wickets",
           "type": "string"
         }
       }
     },
     "FeatureFlag": {
       "id": "FeatureFlag",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "context_type": {
-          "type": "string"
+          "description": "The type of object to which this flag applies (Account, Course, or User). (This field is not present if this FeatureFlag represents the global Canvas default)",
+          "example": "Account",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "Course",
+              "Account",
+              "User"
+            ]
+          }
         },
         "context_id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The id of the object to which this flag applies (This field is not present if this FeatureFlag represents the global Canvas default)",
+          "example": 1038,
+          "type": "integer"
         },
         "feature": {
+          "description": "The feature this flag controls",
+          "example": "fancy_wickets",
           "type": "string"
         },
         "state": {
-          "type": "string"
+          "description": "The policy for the feature at this context.  can be 'off', 'allowed', or 'on'.",
+          "example": "allowed",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "off",
+              "allowed",
+              "on"
+            ]
+          }
         },
         "locked": {
-          "type": "boolean"
+          "description": "If set, this feature flag cannot be changed in the caller's context because the flag is set 'off' or 'on' in a higher context, or the flag is locked by an account the caller does not have permission to administer",
+          "type": "boolean",
+          "example": false
         },
         "locking_account_id": {
-          "type": "string"
-        },
-        "transitions": {
-          "type": "string"
+          "description": "If set, this FeatureFlag can only be modified by someone with administrative rights in the specified account",
+          "type": "integer"
         }
       }
     }

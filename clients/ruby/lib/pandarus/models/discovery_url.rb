@@ -8,7 +8,7 @@ module Pandarus
 
     def self.attribute_map
       {
-        :discovery_url => {:external => "discovery_url", :container => false, :type => nil}
+        :discovery_url => {:external => "discovery_url", :container => false, :type => "String"}
 
       }
     end

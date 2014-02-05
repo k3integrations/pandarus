@@ -8,10 +8,10 @@ module Pandarus
 
     def self.attribute_map
       {
-        :type => {:external => "type", :container => false, :type => nil},
+        :type => {:external => "type", :container => false, :type => "String"},
         :requires_file_upload => {:external => "requires_file_upload", :container => false, :type => nil},
-        :name => {:external => "name", :container => false, :type => nil},
-        :required_settings => {:external => "required_settings", :container => false, :type => nil}
+        :name => {:external => "name", :container => false, :type => "String"},
+        :required_settings => {:external => "required_settings", :container => true, :type => "String"}
 
       }
     end

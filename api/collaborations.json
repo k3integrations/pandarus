@@ -37,15 +37,30 @@
   "models": {
     "Collaborator": {
       "id": "Collaborator",
+      "description": "",
+      "required": [
+        "id"
+      ],
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The unique user or group identifier for the collaborator.",
+          "example": 12345,
+          "type": "integer"
         },
         "type": {
-          "type": "string"
+          "description": "The type of collaborator (e.g. 'user' or 'group').",
+          "example": "user",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "user",
+              "group"
+            ]
+          }
         },
         "name": {
+          "description": "The name of the collaborator.",
+          "example": "Don Draper",
           "type": "string"
         }
       }

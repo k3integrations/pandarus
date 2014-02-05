@@ -8,18 +8,18 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :workflow_state => {:external => "workflow_state", :container => false, :type => nil},
-        :position => {:external => "position", :container => false, :type => nil},
-        :name => {:external => "name", :container => false, :type => nil},
-        :unlock_at => {:external => "unlock_at", :container => false, :type => nil},
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :workflow_state => {:external => "workflow_state", :container => false, :type => "String"},
+        :position => {:external => "position", :container => false, :type => "Integer"},
+        :name => {:external => "name", :container => false, :type => "String"},
+        :unlock_at => {:external => "unlock_at", :container => false, :type => "DateTime"},
         :require_sequential_progress => {:external => "require_sequential_progress", :container => false, :type => nil},
-        :prerequisite_module_ids => {:external => "prerequisite_module_ids", :container => false, :type => nil},
-        :items_count => {:external => "items_count", :container => false, :type => nil},
-        :items_url => {:external => "items_url", :container => false, :type => nil},
-        :items => {:external => "items", :container => false, :type => nil},
-        :state => {:external => "state", :container => false, :type => nil},
-        :completed_at => {:external => "completed_at", :container => false, :type => nil},
+        :prerequisite_module_ids => {:external => "prerequisite_module_ids", :container => true, :type => "Integer"},
+        :items_count => {:external => "items_count", :container => false, :type => "Integer"},
+        :items_url => {:external => "items_url", :container => false, :type => "String"},
+        :items => {:external => "items", :container => true, :type => "ModuleItem"},
+        :state => {:external => "state", :container => false, :type => "String"},
+        :completed_at => {:external => "completed_at", :container => false, :type => "DateTime"},
         :publish_final_grade => {:external => "publish_final_grade", :container => false, :type => nil}
 
       }

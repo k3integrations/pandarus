@@ -327,7 +327,7 @@
           ],
           "type": "array",
           "items": {
-            "$ref": "Groups"
+            "$ref": "Group"
           }
         }
       ]
@@ -409,32 +409,52 @@
   "models": {
     "GroupCategory": {
       "id": "GroupCategory",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "The ID of the group category.",
+          "example": 17,
+          "type": "integer"
         },
         "name": {
+          "description": "The display name of the group category.",
+          "example": "Math Groups",
           "type": "string"
         },
         "role": {
+          "description": "Certain types of group categories have special role designations. Currently, these include: 'communities', 'student_organized', and 'imported'. Regular course/account group categories have a role of null.",
+          "example": "communities",
           "type": "string"
         },
         "self_signup": {
-          "type": "string"
+          "description": "If the group category allows users to join a group themselves, thought they may only be a member of one group per group category at a time. Values include 'restricted', 'enabled', and null 'enabled' allows students to assign themselves to a group 'restricted' restricts them to only joining a group in their section null disallows students from joining groups",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "restricted",
+              "enabled"
+            ]
+          }
         },
         "context_type": {
+          "description": "The course or account that the category group belongs to. The pattern here is that whatever the context_type is, there will be an _id field named after that type. So if instead context_type was 'Course', the course_id field would be replaced by an course_id field.",
+          "example": "Account",
           "type": "string"
         },
         "account_id": {
-          "type": "integer",
-          "format": "int64"
+          "example": 3,
+          "type": "integer"
         },
         "group_limit": {
-          "type": "string"
+          "description": "If self-signup is enabled, group_limit can be set to cap the number of users in each group. If null, there is no limit.",
+          "type": "integer"
         },
         "progress": {
-          "type": "string"
+          "description": "If the group category has not yet finished a randomly student assignment request, a progress object will be attached, which will contain information related to the progress of the assignment request. Refer to the Progress API for more information",
+          "$ref": "Progress"
         }
       }
     }

@@ -8,17 +8,17 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :assignment_id => {:external => "assignment_id", :container => false, :type => nil},
-        :student_ids => {:external => "student_ids", :container => false, :type => nil},
-        :group_id => {:external => "group_id", :container => false, :type => nil},
-        :course_section_id => {:external => "course_section_id", :container => false, :type => nil},
-        :title => {:external => "title", :container => false, :type => nil},
-        :due_at => {:external => "due_at", :container => false, :type => nil},
-        :all_day => {:external => "all_day", :container => false, :type => nil},
-        :all_day_date => {:external => "all_day_date", :container => false, :type => "Date"},
-        :unlock_at => {:external => "unlock_at", :container => false, :type => nil},
-        :lock_at => {:external => "lock_at", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :assignment_id => {:external => "assignment_id", :container => false, :type => "Integer"},
+        :student_ids => {:external => "student_ids", :container => true, :type => "Integer"},
+        :group_id => {:external => "group_id", :container => false, :type => "Integer"},
+        :course_section_id => {:external => "course_section_id", :container => false, :type => "Integer"},
+        :title => {:external => "title", :container => false, :type => "String"},
+        :due_at => {:external => "due_at", :container => false, :type => "DateTime"},
+        :all_day => {:external => "all_day", :container => false, :type => "Integer"},
+        :all_day_date => {:external => "all_day_date", :container => false, :type => "DateTime"},
+        :unlock_at => {:external => "unlock_at", :container => false, :type => "DateTime"},
+        :lock_at => {:external => "lock_at", :container => false, :type => "DateTime"}
 
       }
     end

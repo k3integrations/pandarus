@@ -8,17 +8,17 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :context_id => {:external => "context_id", :container => false, :type => nil},
-        :context_type => {:external => "context_type", :container => false, :type => nil},
-        :user_id => {:external => "user_id", :container => false, :type => nil},
-        :tag => {:external => "tag", :container => false, :type => nil},
-        :completion => {:external => "completion", :container => false, :type => nil},
-        :workflow_state => {:external => "workflow_state", :container => false, :type => nil},
-        :created_at => {:external => "created_at", :container => false, :type => "Date"},
-        :updated_at => {:external => "updated_at", :container => false, :type => "Date"},
-        :message => {:external => "message", :container => false, :type => nil},
-        :url => {:external => "url", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :context_id => {:external => "context_id", :container => false, :type => "Integer"},
+        :context_type => {:external => "context_type", :container => false, :type => "String"},
+        :user_id => {:external => "user_id", :container => false, :type => "Integer"},
+        :tag => {:external => "tag", :container => false, :type => "String"},
+        :completion => {:external => "completion", :container => false, :type => "Integer"},
+        :workflow_state => {:external => "workflow_state", :container => false, :type => "String"},
+        :created_at => {:external => "created_at", :container => false, :type => "DateTime"},
+        :updated_at => {:external => "updated_at", :container => false, :type => "DateTime"},
+        :message => {:external => "message", :container => false, :type => "String"},
+        :url => {:external => "url", :container => false, :type => "String"}
 
       }
     end

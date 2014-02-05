@@ -128,18 +128,41 @@
   "models": {
     "AuthenticationEvent": {
       "id": "AuthenticationEvent",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
-        "id": {
-          "type": "string"
-        },
         "created_at": {
-          "type": "string"
+          "description": "timestamp of the event",
+          "example": "2012-07-19T15:00:00-06:00",
+          "type": "datetime"
         },
         "event_type": {
-          "type": "string"
+          "description": "authentication event type ('login' or 'logout')",
+          "example": "login",
+          "type": "string",
+          "allowableValues": {
+            "values": [
+              "login",
+              "logout"
+            ]
+          }
         },
-        "links": {
-          "type": "string"
+        "pseudonym_id": {
+          "description": "ID of the pseudonym (login) associated with the event",
+          "example": 9478,
+          "type": "integer"
+        },
+        "account_id": {
+          "description": "ID of the account associated with the event. will match the account_id in the associated pseudonym.",
+          "example": 2319,
+          "type": "integer"
+        },
+        "user_id": {
+          "description": "ID of the user associated with the event will match the user_id in the associated pseudonym.",
+          "example": 362,
+          "type": "integer"
         }
       }
     }

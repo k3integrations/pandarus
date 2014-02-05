@@ -8,8 +8,8 @@ module Pandarus
 
     def self.attribute_map
       {
-        :context_id => {:external => "context_id", :container => false, :type => nil},
-        :context_type => {:external => "context_type", :container => false, :type => nil}
+        :context_id => {:external => "context_id", :container => false, :type => "Integer"},
+        :context_type => {:external => "context_type", :container => false, :type => "String"}
 
       }
     end

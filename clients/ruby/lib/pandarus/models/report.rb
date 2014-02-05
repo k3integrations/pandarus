@@ -8,12 +8,12 @@ module Pandarus
 
     def self.attribute_map
       {
-        :id => {:external => "id", :container => false, :type => nil},
-        :report => {:external => "report", :container => false, :type => nil},
-        :file_url => {:external => "file_url", :container => false, :type => nil},
-        :status => {:external => "status", :container => false, :type => nil},
-        :parameters => {:external => "parameters", :container => false, :type => nil},
-        :progress => {:external => "progress", :container => false, :type => nil}
+        :id => {:external => "id", :container => false, :type => "Integer"},
+        :report => {:external => "report", :container => false, :type => "String"},
+        :file_url => {:external => "file_url", :container => false, :type => "String"},
+        :status => {:external => "status", :container => false, :type => "String"},
+        :parameters => {:external => "parameters", :container => false, :type => "ReportParameters"},
+        :progress => {:external => "progress", :container => false, :type => "String"}
 
       }
     end

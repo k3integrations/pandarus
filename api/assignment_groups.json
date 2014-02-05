@@ -238,29 +238,71 @@
     }
   ],
   "models": {
+    "GradingRules": {
+      "id": "GradingRules",
+      "description": "",
+      "required": [
+
+      ],
+      "properties": {
+        "drop_lowest": {
+          "description": "Number of lowest scores to be dropped for each user.",
+          "example": 1,
+          "type": "integer"
+        },
+        "drop_highest": {
+          "description": "Number of highest scores to be dropped for each user.",
+          "example": 1,
+          "type": "integer"
+        },
+        "never_drop": {
+          "description": "Assignment IDs that should never be dropped.",
+          "example": "[33, 17, 24]",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      }
+    },
     "AssignmentGroup": {
       "id": "AssignmentGroup",
+      "description": "",
+      "required": [
+
+      ],
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the id of the Assignment Group",
+          "example": 1,
+          "type": "integer"
         },
         "name": {
+          "description": "the name of the Assignment Group",
+          "example": "group2",
           "type": "string"
         },
         "position": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the position of the Assignment Group",
+          "example": 7,
+          "type": "integer"
         },
         "group_weight": {
-          "type": "integer",
-          "format": "int64"
+          "description": "the weight of the Assignment Group",
+          "example": 20,
+          "type": "integer"
         },
         "assignments": {
-          "type": "string"
+          "description": "the assignments in this Assignment Group (see the Assignment API for a detailed list of fields)",
+          "example": "[]",
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
         },
         "rules": {
-          "type": "string"
+          "description": "the grading rules that this Assignment Group has",
+          "$ref": "GradingRules"
         }
       }
     }

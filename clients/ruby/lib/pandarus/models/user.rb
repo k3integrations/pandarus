@@ -9,18 +9,18 @@ module Pandarus
     def self.attribute_map
       {
         :id => {:external => "id", :container => false, :type => nil},
-        :name => {:external => "name", :container => false, :type => nil},
-        :sortable_name => {:external => "sortable_name", :container => false, :type => nil},
-        :short_name => {:external => "short_name", :container => false, :type => nil},
-        :sis_user_id => {:external => "sis_user_id", :container => false, :type => nil},
-        :sis_login_id => {:external => "sis_login_id", :container => false, :type => nil},
-        :login_id => {:external => "login_id", :container => false, :type => nil},
-        :avatar_url => {:external => "avatar_url", :container => false, :type => nil},
+        :name => {:external => "name", :container => false, :type => "String"},
+        :sortable_name => {:external => "sortable_name", :container => false, :type => "String"},
+        :short_name => {:external => "short_name", :container => false, :type => "String"},
+        :sis_user_id => {:external => "sis_user_id", :container => false, :type => "String"},
+        :sis_login_id => {:external => "sis_login_id", :container => false, :type => "String"},
+        :login_id => {:external => "login_id", :container => false, :type => "String"},
+        :avatar_url => {:external => "avatar_url", :container => false, :type => "String"},
         :enrollments => {:external => "enrollments", :container => true, :type => "Enrollment"},
-        :email => {:external => "email", :container => false, :type => nil},
-        :locale => {:external => "locale", :container => false, :type => nil},
+        :email => {:external => "email", :container => false, :type => "String"},
+        :locale => {:external => "locale", :container => false, :type => "String"},
         :last_login => {:external => "last_login", :container => false, :type => "Date"},
-        :time_zone => {:external => "time_zone", :container => false, :type => nil}
+        :time_zone => {:external => "time_zone", :container => false, :type => "String"}
 
       }
     end

@@ -35,7 +35,7 @@ object RubyCanvasCodegen extends BasicRubyGenerator {
     "float" -> "Float",
     // "long" -> "long",
     "double" -> "Float",
-    "Array" -> "Array",
+    // "Array" -> "Array",
     // "boolean" -> "bool",
     "string" -> "String",
     "datetime" -> "DateTime"

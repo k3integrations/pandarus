@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    pandarus (0.2.2)
+    pandarus (0.3.1)
       activesupport (>= 3.0.0)
-      footrest (= 0.3.0)
+      footrest (= 0.3.1)
 
 GEM
   remote: https://rubygems.org/
@@ -26,7 +26,7 @@ GEM
     diff-lcs (1.2.5)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
-    footrest (0.3.0)
+    footrest (0.3.1)
       activesupport (>= 3.0.0)
       faraday (~> 0.9.0)
       link_header (>= 0.0.7)

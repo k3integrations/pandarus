@@ -25,6 +25,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "debugger"
   gem.add_development_dependency "pry"
 
-  gem.add_dependency "footrest", "0.3.0"
+  gem.add_dependency "footrest", "0.3.1"
   gem.add_dependency "activesupport", ">= 3.0.0"
 end

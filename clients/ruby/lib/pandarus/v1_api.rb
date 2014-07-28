@@ -733,7 +733,7 @@ module Pandarus
       end
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
-      response.map {|response|Account.new(response)}
+      Account.new(response)
     end
     def make_account_admin(account_id,user_id,opts={})
       query_param_keys = [

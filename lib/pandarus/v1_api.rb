@@ -9,11 +9,11 @@ module Pandarus
 
     def list_authorization_configs(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -39,11 +39,11 @@ module Pandarus
     end
     def create_authorization_config(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -69,11 +69,11 @@ module Pandarus
     end
     def update_authorization_config(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -102,11 +102,11 @@ module Pandarus
     end
     def get_authorization_config(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -135,11 +135,11 @@ module Pandarus
     end
     def delete_authorization_config(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -165,15 +165,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def get_discovery_url(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -199,11 +199,11 @@ module Pandarus
     end
     def set_discovery_url(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -229,11 +229,11 @@ module Pandarus
     end
     def delete_discovery_url(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -256,15 +256,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_available_reports(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -287,16 +287,16 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def start_report(account_id,report,__parameters__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :__parameters__,
-        
+
       ]
 
       # verify existence of params
@@ -327,11 +327,11 @@ module Pandarus
     end
     def index_of_reports(account_id,report,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -364,7 +364,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -398,11 +398,11 @@ module Pandarus
     end
     def delete_report(account_id,report,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -434,17 +434,17 @@ module Pandarus
     end
     def list_accounts(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -463,11 +463,11 @@ module Pandarus
     end
     def get_single_account(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -497,7 +497,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -535,7 +535,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -561,7 +561,7 @@ module Pandarus
     end
     def update_account(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -570,7 +570,7 @@ module Pandarus
         :account__default_storage_quota_mb__,
         :account__default_user_storage_quota_mb__,
         :account__default_group_storage_quota_mb__,
-        
+
       ]
 
       # verify existence of params
@@ -593,16 +593,16 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def change_the_domains_for_account(id,account__domains__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :account__domains__,
-        
+
       ]
 
       # verify existence of params
@@ -627,7 +627,7 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def get_single_account_internal(id,opts={})
       query_param_keys = [
@@ -635,7 +635,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -658,11 +658,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def create_new_root_account(account__name__,account__domain__,account__settings__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -670,7 +670,7 @@ module Pandarus
         :account__domain__,
         :account__services__,
         :account__settings__,
-        
+
       ]
 
       # verify existence of params
@@ -697,11 +697,11 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def create_new_sub_account(account_id,account__name__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -709,7 +709,7 @@ module Pandarus
         :account__default_storage_quota_mb__,
         :account__default_user_storage_quota_mb__,
         :account__default_group_storage_quota_mb__,
-        
+
       ]
 
       # verify existence of params
@@ -737,14 +737,14 @@ module Pandarus
     end
     def make_account_admin(account_id,user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :user_id,
         :role,
         :send_confirmation,
-        
+
       ]
 
       # verify existence of params
@@ -776,7 +776,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -805,11 +805,11 @@ module Pandarus
     end
     def list_account_admins(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -835,11 +835,11 @@ module Pandarus
     end
     def get_department_level_participation_data_accounts(account_id,term_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -865,15 +865,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_department_level_participation_data_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -896,15 +896,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_department_level_participation_data_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -927,15 +927,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_department_level_grade_data_accounts(account_id,term_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -961,15 +961,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_department_level_grade_data_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -992,15 +992,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_department_level_grade_data_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1023,15 +1023,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_department_level_statistics_accounts(account_id,term_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1057,15 +1057,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_department_level_statistics_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1088,15 +1088,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_department_level_statistics_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1119,15 +1119,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_course_level_participation_data(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1150,7 +1150,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_course_level_assignment_data(course_id,async,opts={})
       query_param_keys = [
@@ -1158,7 +1158,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1183,15 +1183,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_course_level_student_summary_data(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1214,15 +1214,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_user_in_a_course_level_participation_data(course_id,student_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1248,15 +1248,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_user_in_a_course_level_assignment_data(course_id,student_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1282,15 +1282,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_user_in_a_course_level_messaging_data(course_id,student_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1316,15 +1316,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_external_feeds_courses(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1350,11 +1350,11 @@ module Pandarus
     end
     def list_external_feeds_groups(group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1380,14 +1380,14 @@ module Pandarus
     end
     def create_external_feed_courses(course_id,url,verbosity,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :url,
         :header_match,
         :verbosity,
-        
+
       ]
 
       # verify existence of params
@@ -1417,14 +1417,14 @@ module Pandarus
     end
     def create_external_feed_groups(group_id,url,verbosity,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :url,
         :header_match,
         :verbosity,
-        
+
       ]
 
       # verify existence of params
@@ -1454,11 +1454,11 @@ module Pandarus
     end
     def delete_external_feed_courses(course_id,external_feed_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1487,11 +1487,11 @@ module Pandarus
     end
     def delete_external_feed_groups(group_id,external_feed_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1527,13 +1527,13 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -1549,11 +1549,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def create_appointment_group(appointment_group__context_codes__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -1569,7 +1569,7 @@ module Pandarus
         :appointment_group__max_appointments_per_participant__,
         :appointment_group__new_appointments_____x__,
         :appointment_group__participant_visibility__,
-        
+
       ]
 
       # verify existence of params
@@ -1592,7 +1592,7 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def get_single_appointment_group(id,opts={})
       query_param_keys = [
@@ -1600,7 +1600,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1623,11 +1623,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def update_appointment_group(id,appointment_group__context_codes__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -1643,7 +1643,7 @@ module Pandarus
         :appointment_group__max_appointments_per_participant__,
         :appointment_group__new_appointments_____x__,
         :appointment_group__participant_visibility__,
-        
+
       ]
 
       # verify existence of params
@@ -1668,7 +1668,7 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def delete_appointment_group(id,opts={})
       query_param_keys = [
@@ -1676,7 +1676,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1699,7 +1699,7 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_user_participants(id,opts={})
       query_param_keys = [
@@ -1707,7 +1707,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1730,7 +1730,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_student_group_participants(id,opts={})
       query_param_keys = [
@@ -1738,7 +1738,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1761,7 +1761,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_assignment_groups(course_id,include,opts={})
       query_param_keys = [
@@ -1770,7 +1770,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1803,7 +1803,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1834,7 +1834,7 @@ module Pandarus
     end
     def create_assignment_group(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -1842,7 +1842,7 @@ module Pandarus
         :position,
         :group_weight,
         :rules,
-        
+
       ]
 
       # verify existence of params
@@ -1868,11 +1868,11 @@ module Pandarus
     end
     def edit_assignment_group(course_id,assignment_group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1905,7 +1905,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1936,11 +1936,11 @@ module Pandarus
     end
     def delete_assignment(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -1975,7 +1975,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2008,7 +2008,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2039,7 +2039,7 @@ module Pandarus
     end
     def create_assignment(course_id,assignment__name__,assignment__position__,assignment__submission_types__,assignment__allowed_extensions__,assignment__points_possible__,assignment__due_at__,assignment__lock_at__,assignment__unlock_at__,assignment__description__,assignment__assignment_group_id__,assignment__muted__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -2065,7 +2065,7 @@ module Pandarus
         :assignment__muted__,
         :assignment__assignment_overrides__,
         :assignment__published__,
-        
+
       ]
 
       # verify existence of params
@@ -2113,11 +2113,11 @@ module Pandarus
     end
     def edit_assignment(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2146,11 +2146,11 @@ module Pandarus
     end
     def list_assignment_overrides(course_id,assignment_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2179,11 +2179,11 @@ module Pandarus
     end
     def get_single_assignment_override(course_id,assignment_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2215,11 +2215,11 @@ module Pandarus
     end
     def redirect_to_the_assignment_override_for_group(group_id,assignment_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2245,15 +2245,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def redirect_to_the_assignment_override_for_section(course_section_id,assignment_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2279,11 +2279,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def create_assignment_override(course_id,assignment_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -2294,7 +2294,7 @@ module Pandarus
         :assignment_override__due_at__,
         :assignment_override__unlock_at__,
         :assignment_override__lock_at__,
-        
+
       ]
 
       # verify existence of params
@@ -2323,7 +2323,7 @@ module Pandarus
     end
     def update_assignment_override(course_id,assignment_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -2332,7 +2332,7 @@ module Pandarus
         :assignment_override__due_at__,
         :assignment_override__unlock_at__,
         :assignment_override__lock_at__,
-        
+
       ]
 
       # verify existence of params
@@ -2364,11 +2364,11 @@ module Pandarus
     end
     def delete_assignment_override(course_id,assignment_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2405,7 +2405,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2428,7 +2428,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def query_by_account(account_id,opts={})
       query_param_keys = [
@@ -2437,7 +2437,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2460,7 +2460,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def query_by_user(user_id,opts={})
       query_param_keys = [
@@ -2469,7 +2469,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2492,7 +2492,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_calendar_events(opts={})
       query_param_keys = [
@@ -2505,13 +2505,13 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -2527,11 +2527,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def create_calendar_event(calendar_event__context_code__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -2546,7 +2546,7 @@ module Pandarus
         :calendar_event__child_event_data_____x____start_at__,
         :calendar_event__child_event_data_____x____end_at__,
         :calendar_event__child_event_data_____x____context_code__,
-        
+
       ]
 
       # verify existence of params
@@ -2569,15 +2569,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def get_single_calendar_event_or_assignment(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2600,17 +2600,17 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def reserve_time_slot_calendar_events(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :participant_id,
         :cancel_existing,
-        
+
       ]
 
       # verify existence of params
@@ -2633,16 +2633,16 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def reserve_time_slot_calendar_events(id,participant_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :cancel_existing,
-        
+
       ]
 
       # verify existence of params
@@ -2668,11 +2668,11 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def update_calendar_event(id,calendar_event__context_code__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -2687,7 +2687,7 @@ module Pandarus
         :calendar_event__child_event_data_____x____start_at__,
         :calendar_event__child_event_data_____x____end_at__,
         :calendar_event__child_event_data_____x____context_code__,
-        
+
       ]
 
       # verify existence of params
@@ -2712,7 +2712,7 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def delete_calendar_event(id,opts={})
       query_param_keys = [
@@ -2720,7 +2720,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2743,15 +2743,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_members_of_collaboration(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2777,11 +2777,11 @@ module Pandarus
     end
     def list_user_group_collections_users(user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2807,11 +2807,11 @@ module Pandarus
     end
     def list_user_group_collections_groups(group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2837,17 +2837,17 @@ module Pandarus
     end
     def list_pinnable_collections(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -2863,15 +2863,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_single_collection(collection_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -2897,13 +2897,13 @@ module Pandarus
     end
     def create_collection_users(user_id,name,visibility,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :name,
         :visibility,
-        
+
       ]
 
       # verify existence of params
@@ -2933,13 +2933,13 @@ module Pandarus
     end
     def create_collection_groups(group_id,name,visibility,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :name,
         :visibility,
-        
+
       ]
 
       # verify existence of params
@@ -2969,13 +2969,13 @@ module Pandarus
     end
     def edit_collection(collection_id,name,visibility,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :name,
         :visibility,
-        
+
       ]
 
       # verify existence of params
@@ -3005,11 +3005,11 @@ module Pandarus
     end
     def delete_collection(collection_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3035,11 +3035,11 @@ module Pandarus
     end
     def follow_collection(collection_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3062,15 +3062,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def un_follow_collection(collection_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3093,15 +3093,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_collection_items_collections(collection_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3127,11 +3127,11 @@ module Pandarus
     end
     def list_collection_items_collections(collection_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3157,11 +3157,11 @@ module Pandarus
     end
     def get_individual_collection_item(item_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3187,7 +3187,7 @@ module Pandarus
     end
     def create_or_clone_collection_item(collection_id,link_url,title,description,image_url,user_comment,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -3196,7 +3196,7 @@ module Pandarus
         :description,
         :image_url,
         :user_comment,
-        
+
       ]
 
       # verify existence of params
@@ -3232,12 +3232,12 @@ module Pandarus
     end
     def edit_collection_item(item_id,user_comment,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :user_comment,
-        
+
       ]
 
       # verify existence of params
@@ -3265,11 +3265,11 @@ module Pandarus
     end
     def delete_collection_item(item_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3295,11 +3295,11 @@ module Pandarus
     end
     def upvote_item(item_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3322,15 +3322,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def de_upvote_item(item_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3353,7 +3353,7 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_of_commmessages_for_user(user_id,opts={})
       query_param_keys = [
@@ -3363,7 +3363,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3389,11 +3389,11 @@ module Pandarus
     end
     def list_user_communication_channels(user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3419,14 +3419,14 @@ module Pandarus
     end
     def create_communication_channel(user_id,communication_channel__address__,communication_channel__type__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :communication_channel__address__,
         :communication_channel__type__,
         :skip_confirmation,
-        
+
       ]
 
       # verify existence of params
@@ -3456,11 +3456,11 @@ module Pandarus
     end
     def delete_communication_channel_users(user_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3489,11 +3489,11 @@ module Pandarus
     end
     def delete_communication_channel_users(user_id,type,address,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3525,11 +3525,11 @@ module Pandarus
     end
     def list_conferences_courses(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3555,11 +3555,11 @@ module Pandarus
     end
     def list_conferences_groups(group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3585,11 +3585,11 @@ module Pandarus
     end
     def list_content_exports(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3615,11 +3615,11 @@ module Pandarus
     end
     def show_content_export(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3648,12 +3648,12 @@ module Pandarus
     end
     def export_course_content(course_id,export_type,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :export_type,
-        
+
       ]
 
       # verify existence of params
@@ -3681,11 +3681,11 @@ module Pandarus
     end
     def list_migration_issues(course_id,content_migration_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3714,11 +3714,11 @@ module Pandarus
     end
     def get_migration_issue(course_id,content_migration_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3750,12 +3750,12 @@ module Pandarus
     end
     def update_migration_issue(course_id,content_migration_id,id,workflow_state,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :workflow_state,
-        
+
       ]
 
       # verify existence of params
@@ -3789,11 +3789,11 @@ module Pandarus
     end
     def list_content_migrations(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3819,11 +3819,11 @@ module Pandarus
     end
     def get_content_migration(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3852,7 +3852,7 @@ module Pandarus
     end
     def create_content_migration(course_id,migration_type,pre_attachment__name__,settings__file_url__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -3871,7 +3871,7 @@ module Pandarus
         :date_shift_options__new_start_date__,
         :date_shift_options__new_end_date__,
         :date_shift_options__day_substitutions_____x__,
-        
+
       ]
 
       # verify existence of params
@@ -3903,11 +3903,11 @@ module Pandarus
     end
     def update_content_migration(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3936,11 +3936,11 @@ module Pandarus
     end
     def list_migration_systems(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -3974,7 +3974,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4002,7 +4002,7 @@ module Pandarus
     end
     def create_conversation(recipients,body,group_conversation,attachment_ids,media_comment_id,media_comment_type,mode,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -4018,7 +4018,7 @@ module Pandarus
         :filter,
         :filter_mode,
         :context_code,
-        
+
       ]
 
       # verify existence of params
@@ -4053,21 +4053,21 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def get_running_batches(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -4083,7 +4083,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_single_conversation(id,interleave_submissions,auto_mark_as_read,opts={})
       query_param_keys = [
@@ -4095,7 +4095,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4122,11 +4122,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def edit_conversation(id,conversation__subject__,conversation__workflow_state__,conversation__subscribed__,conversation__starred__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -4137,7 +4137,7 @@ module Pandarus
         :scope,
         :filter,
         :filter_mode,
-        
+
       ]
 
       # verify existence of params
@@ -4168,21 +4168,21 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def mark_all_as_read(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -4198,15 +4198,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def delete_conversation(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4229,16 +4229,16 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def add_recipients(id,recipients,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :recipients,
-        
+
       ]
 
       # verify existence of params
@@ -4263,11 +4263,11 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def add_message(id,body,attachment_ids,media_comment_id,media_comment_type,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -4277,7 +4277,7 @@ module Pandarus
         :media_comment_type,
         :recipients,
         :included_messages,
-        
+
       ]
 
       # verify existence of params
@@ -4308,16 +4308,16 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def delete_message(id,remove,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :remove,
-        
+
       ]
 
       # verify existence of params
@@ -4342,17 +4342,17 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def batch_update_conversations(conversation_ids,event,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :conversation_ids,
         :event,
-        
+
       ]
 
       # verify existence of params
@@ -4380,17 +4380,17 @@ module Pandarus
     end
     def find_recipients(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -4406,21 +4406,21 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def unread_count(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -4436,7 +4436,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def query_by_course(course_id,opts={})
       query_param_keys = [
@@ -4445,7 +4445,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4478,7 +4478,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4504,7 +4504,7 @@ module Pandarus
     end
     def create_new_course(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -4528,7 +4528,7 @@ module Pandarus
         :course__apply_assignment_group_weights__,
         :offer,
         :course__syllabus_body__,
-        
+
       ]
 
       # verify existence of params
@@ -4554,11 +4554,11 @@ module Pandarus
     end
     def upload_file(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4581,15 +4581,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def list_students(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4623,7 +4623,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4659,7 +4659,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4687,11 +4687,11 @@ module Pandarus
     end
     def list_recently_logged_in_students(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4717,11 +4717,11 @@ module Pandarus
     end
     def get_single_user(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4750,12 +4750,12 @@ module Pandarus
     end
     def preview_processed_html(course_id,html,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :html,
-        
+
       ]
 
       # verify existence of params
@@ -4780,15 +4780,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def course_activity_stream(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4811,15 +4811,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def course_activity_stream_summary(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4842,15 +4842,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def course_todo_items(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4873,7 +4873,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def conclude_course(id,event,opts={})
       query_param_keys = [
@@ -4881,7 +4881,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4906,15 +4906,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def get_course_settings(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -4937,18 +4937,18 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def update_course_settings(course_id,allow_student_discussion_topics,allow_student_forum_attachments,allow_student_discussion_editing,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :allow_student_discussion_topics,
         :allow_student_forum_attachments,
         :allow_student_discussion_editing,
-        
+
       ]
 
       # verify existence of params
@@ -4977,7 +4977,7 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def get_single_course_courses(id,include,opts={})
       query_param_keys = [
@@ -4985,7 +4985,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5017,7 +5017,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5048,11 +5048,11 @@ module Pandarus
     end
     def update_course(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5075,17 +5075,17 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def update_courses(account_id,course_ids,event,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :course_ids,
         :event,
-        
+
       ]
 
       # verify existence of params
@@ -5115,11 +5115,11 @@ module Pandarus
     end
     def get_course_copy_status(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5145,18 +5145,18 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def copy_course_content(course_id,source_course,except,only,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :source_course,
         :except,
         :only,
-        
+
       ]
 
       # verify existence of params
@@ -5185,15 +5185,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def list_custom_gradebook_columns(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5219,7 +5219,7 @@ module Pandarus
     end
     def create_custom_gradebook_column(course_id,column__title__,column__position__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -5227,7 +5227,7 @@ module Pandarus
         :column__position__,
         :column__hidden__,
         :column__teacher_notes__,
-        
+
       ]
 
       # verify existence of params
@@ -5257,11 +5257,11 @@ module Pandarus
     end
     def update_custom_gradebook_column(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5290,11 +5290,11 @@ module Pandarus
     end
     def delete_custom_gradebook_column(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5323,12 +5323,12 @@ module Pandarus
     end
     def reorder_custom_columns(course_id,order,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :order,
-        
+
       ]
 
       # verify existence of params
@@ -5353,15 +5353,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def list_entries_for_column(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5390,12 +5390,12 @@ module Pandarus
     end
     def update_column_data(course_id,id,user_id,column_data__content__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :column_data__content__,
-        
+
       ]
 
       # verify existence of params
@@ -5436,7 +5436,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5461,7 +5461,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_discussion_topics_groups(group_id,order_by,opts={})
       query_param_keys = [
@@ -5472,7 +5472,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5497,11 +5497,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def create_new_discussion_topic_courses(course_id,title,message,discussion_type,podcast_enabled,podcast_has_student_posts,require_initial_post,assignment,is_announcement,position_after,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -5517,7 +5517,7 @@ module Pandarus
         :assignment,
         :is_announcement,
         :position_after,
-        
+
       ]
 
       # verify existence of params
@@ -5558,11 +5558,11 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def create_new_discussion_topic_groups(group_id,title,message,discussion_type,podcast_enabled,podcast_has_student_posts,require_initial_post,assignment,is_announcement,position_after,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -5578,7 +5578,7 @@ module Pandarus
         :assignment,
         :is_announcement,
         :position_after,
-        
+
       ]
 
       # verify existence of params
@@ -5619,11 +5619,11 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def create_new_discussion_topic_collection_items(collection_item_id,title,message,discussion_type,podcast_enabled,podcast_has_student_posts,require_initial_post,assignment,is_announcement,position_after,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -5639,7 +5639,7 @@ module Pandarus
         :assignment,
         :is_announcement,
         :position_after,
-        
+
       ]
 
       # verify existence of params
@@ -5680,15 +5680,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def update_topic_courses(course_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5714,15 +5714,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def update_topic_groups(group_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5748,15 +5748,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def update_topic_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5782,15 +5782,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def delete_topic_courses(course_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5816,15 +5816,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def delete_topic_groups(group_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5850,15 +5850,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def delete_topic_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -5884,16 +5884,16 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def update_entry_courses(course_id,topic_id,id,message,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :message,
-        
+
       ]
 
       # verify existence of params
@@ -5924,16 +5924,16 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def update_entry_groups(group_id,topic_id,id,message,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :message,
-        
+
       ]
 
       # verify existence of params
@@ -5964,16 +5964,16 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def update_entry_collection_items(collection_item_id,topic_id,id,message,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :message,
-        
+
       ]
 
       # verify existence of params
@@ -6004,15 +6004,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def delete_entry_courses(course_id,topic_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6041,15 +6041,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def delete_entry_groups(group_id,topic_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6078,15 +6078,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def delete_entry_collection_items(collection_item_id,topic_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6115,15 +6115,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def get_single_topic_courses(course_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6149,15 +6149,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_single_topic_groups(group_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6183,15 +6183,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_single_topic_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6217,15 +6217,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_the_full_topic_courses(course_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6251,15 +6251,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_the_full_topic_groups(group_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6285,15 +6285,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_the_full_topic_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6319,17 +6319,17 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def post_entry_courses(course_id,topic_id,message,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :message,
         :attachment,
-        
+
       ]
 
       # verify existence of params
@@ -6357,17 +6357,17 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def post_entry_groups(group_id,topic_id,message,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :message,
         :attachment,
-        
+
       ]
 
       # verify existence of params
@@ -6395,17 +6395,17 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def post_entry_collection_items(collection_item_id,topic_id,message,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :message,
         :attachment,
-        
+
       ]
 
       # verify existence of params
@@ -6433,15 +6433,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def list_topic_entries_courses(course_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6467,15 +6467,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_topic_entries_groups(group_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6501,15 +6501,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_topic_entries_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6535,17 +6535,17 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def post_reply_courses(course_id,topic_id,entry_id,message,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :message,
         :attachment,
-        
+
       ]
 
       # verify existence of params
@@ -6576,17 +6576,17 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def post_reply_groups(group_id,topic_id,entry_id,message,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :message,
         :attachment,
-        
+
       ]
 
       # verify existence of params
@@ -6617,17 +6617,17 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def post_reply_collection_items(collection_item_id,topic_id,entry_id,message,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :message,
         :attachment,
-        
+
       ]
 
       # verify existence of params
@@ -6658,15 +6658,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def list_entry_replies_courses(course_id,topic_id,entry_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6695,15 +6695,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_entry_replies_groups(group_id,topic_id,entry_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6732,15 +6732,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_entry_replies_collection_items(collection_item_id,topic_id,entry_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6769,7 +6769,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_entries_courses(course_id,topic_id,ids,opts={})
       query_param_keys = [
@@ -6777,7 +6777,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6805,7 +6805,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_entries_groups(group_id,topic_id,ids,opts={})
       query_param_keys = [
@@ -6813,7 +6813,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6841,7 +6841,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_entries_collection_items(collection_item_id,topic_id,ids,opts={})
       query_param_keys = [
@@ -6849,7 +6849,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6877,15 +6877,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def mark_topic_as_read_courses(course_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6911,15 +6911,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def mark_topic_as_read_groups(group_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6945,15 +6945,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def mark_topic_as_read_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -6979,15 +6979,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def mark_topic_as_unread_courses(course_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7013,15 +7013,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def mark_topic_as_unread_groups(group_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7047,15 +7047,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def mark_topic_as_unread_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7081,16 +7081,16 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def mark_all_entries_as_read_courses(course_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :forced_read_state,
-        
+
       ]
 
       # verify existence of params
@@ -7116,16 +7116,16 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def mark_all_entries_as_read_groups(group_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :forced_read_state,
-        
+
       ]
 
       # verify existence of params
@@ -7151,16 +7151,16 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def mark_all_entries_as_read_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :forced_read_state,
-        
+
       ]
 
       # verify existence of params
@@ -7186,7 +7186,7 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def mark_all_entries_as_unread_courses(course_id,topic_id,opts={})
       query_param_keys = [
@@ -7194,7 +7194,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7220,7 +7220,7 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def mark_all_entries_as_unread_groups(group_id,topic_id,opts={})
       query_param_keys = [
@@ -7228,7 +7228,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7254,7 +7254,7 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def mark_all_entries_as_unread_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
@@ -7262,7 +7262,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7288,16 +7288,16 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def mark_entry_as_read_courses(course_id,topic_id,entry_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :forced_read_state,
-        
+
       ]
 
       # verify existence of params
@@ -7326,16 +7326,16 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def mark_entry_as_read_groups(group_id,topic_id,entry_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :forced_read_state,
-        
+
       ]
 
       # verify existence of params
@@ -7364,16 +7364,16 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def mark_entry_as_read_collection_items(collection_item_id,topic_id,entry_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :forced_read_state,
-        
+
       ]
 
       # verify existence of params
@@ -7402,7 +7402,7 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def mark_entry_as_unread_courses(course_id,topic_id,entry_id,opts={})
       query_param_keys = [
@@ -7410,7 +7410,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7439,7 +7439,7 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def mark_entry_as_unread_groups(group_id,topic_id,entry_id,opts={})
       query_param_keys = [
@@ -7447,7 +7447,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7476,7 +7476,7 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def mark_entry_as_unread_collection_items(collection_item_id,topic_id,entry_id,opts={})
       query_param_keys = [
@@ -7484,7 +7484,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7513,15 +7513,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def subscribe_to_topic_courses(course_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7547,15 +7547,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def subscribe_to_topic_groups(group_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7581,15 +7581,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def subscribe_to_topic_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7615,15 +7615,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def unsubscribe_from_topic_courses(course_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7649,15 +7649,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def unsubscribe_from_topic_groups(group_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7683,15 +7683,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def unsubscribe_from_topic_collection_items(collection_item_id,topic_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7717,7 +7717,7 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_enrollments_courses(course_id,type,role,state,opts={})
       query_param_keys = [
@@ -7727,7 +7727,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7765,7 +7765,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7803,7 +7803,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7835,7 +7835,7 @@ module Pandarus
     end
     def enroll_user_courses(course_id,enrollment__user_id__,enrollment__type__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -7847,7 +7847,7 @@ module Pandarus
         :enrollment__limit_privileges_to_course_section__,
         :enrollment__notify__,
         :enrollment__self_enrollment_code__,
-        
+
       ]
 
       # verify existence of params
@@ -7877,7 +7877,7 @@ module Pandarus
     end
     def enroll_user_sections(section_id,enrollment__user_id__,enrollment__type__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -7889,7 +7889,7 @@ module Pandarus
         :enrollment__limit_privileges_to_course_section__,
         :enrollment__notify__,
         :enrollment__self_enrollment_code__,
-        
+
       ]
 
       # verify existence of params
@@ -7923,7 +7923,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7958,7 +7958,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -7981,7 +7981,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_external_tools_accounts(account_id,opts={})
       query_param_keys = [
@@ -7989,7 +7989,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8012,7 +8012,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_sessionless_launch_url_for_external_tool_courses(course_id,opts={})
       query_param_keys = [
@@ -8023,7 +8023,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8046,7 +8046,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_sessionless_launch_url_for_external_tool_accounts(account_id,opts={})
       query_param_keys = [
@@ -8057,7 +8057,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8080,15 +8080,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_single_external_tool_courses(course_id,external_tool_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8114,15 +8114,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_single_external_tool_accounts(account_id,external_tool_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8148,11 +8148,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def create_external_tool_courses(course_id,name,privacy_level,consumer_key,shared_secret,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -8190,7 +8190,7 @@ module Pandarus
         :config_type,
         :config_xml,
         :config_url,
-        
+
       ]
 
       # verify existence of params
@@ -8221,11 +8221,11 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def create_external_tool_accounts(account_id,name,privacy_level,consumer_key,shared_secret,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -8263,7 +8263,7 @@ module Pandarus
         :config_type,
         :config_xml,
         :config_url,
-        
+
       ]
 
       # verify existence of params
@@ -8294,15 +8294,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def edit_external_tool_courses(course_id,external_tool_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8328,15 +8328,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def edit_external_tool_accounts(account_id,external_tool_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8362,15 +8362,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def delete_external_tool_courses(course_id,external_tool_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8396,15 +8396,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def delete_external_tool_accounts(account_id,external_tool_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8430,21 +8430,21 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_favorite_courses(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -8463,11 +8463,11 @@ module Pandarus
     end
     def add_course_to_favorites(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8493,11 +8493,11 @@ module Pandarus
     end
     def remove_course_from_favorites(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8523,17 +8523,17 @@ module Pandarus
     end
     def reset_course_favorites(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -8549,15 +8549,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_features_courses(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8583,11 +8583,11 @@ module Pandarus
     end
     def list_features_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8613,11 +8613,11 @@ module Pandarus
     end
     def list_features_users(user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8643,11 +8643,11 @@ module Pandarus
     end
     def list_enabled_features_courses(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8670,15 +8670,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_enabled_features_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8701,15 +8701,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_enabled_features_users(user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8732,15 +8732,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_feature_flag_courses(course_id,feature,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8769,11 +8769,11 @@ module Pandarus
     end
     def get_feature_flag_accounts(account_id,feature,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8802,11 +8802,11 @@ module Pandarus
     end
     def get_feature_flag_users(user_id,feature,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8835,13 +8835,13 @@ module Pandarus
     end
     def set_feature_flag_courses(course_id,feature,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :state,
         :locking_account_id,
-        
+
       ]
 
       # verify existence of params
@@ -8870,13 +8870,13 @@ module Pandarus
     end
     def set_feature_flag_accounts(account_id,feature,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :state,
         :locking_account_id,
-        
+
       ]
 
       # verify existence of params
@@ -8905,13 +8905,13 @@ module Pandarus
     end
     def set_feature_flag_users(user_id,feature,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :state,
         :locking_account_id,
-        
+
       ]
 
       # verify existence of params
@@ -8940,11 +8940,11 @@ module Pandarus
     end
     def remove_feature_flag_courses(course_id,feature,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -8973,11 +8973,11 @@ module Pandarus
     end
     def remove_feature_flag_accounts(account_id,feature,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9006,11 +9006,11 @@ module Pandarus
     end
     def remove_feature_flag_users(user_id,feature,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9044,7 +9044,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9075,7 +9075,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9101,11 +9101,11 @@ module Pandarus
     end
     def get_file(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9131,7 +9131,7 @@ module Pandarus
     end
     def update_file(id,name,parent_folder_id,lock_at,unlock_at,locked,hidden,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -9141,7 +9141,7 @@ module Pandarus
         :unlock_at,
         :locked,
         :hidden,
-        
+
       ]
 
       # verify existence of params
@@ -9179,11 +9179,11 @@ module Pandarus
     end
     def delete_file(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9206,15 +9206,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_folders(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9240,11 +9240,11 @@ module Pandarus
     end
     def get_folder_courses(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9273,11 +9273,11 @@ module Pandarus
     end
     def get_folder_users(user_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9306,11 +9306,11 @@ module Pandarus
     end
     def get_folder_groups(group_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9339,11 +9339,11 @@ module Pandarus
     end
     def get_folder_folders(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9369,7 +9369,7 @@ module Pandarus
     end
     def update_folder(id,name,parent_folder_id,lock_at,unlock_at,locked,hidden,position,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -9380,7 +9380,7 @@ module Pandarus
         :locked,
         :hidden,
         :position,
-        
+
       ]
 
       # verify existence of params
@@ -9420,7 +9420,7 @@ module Pandarus
     end
     def create_folder_courses(course_id,name,parent_folder_id,parent_folder_path,lock_at,unlock_at,locked,hidden,position,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -9432,7 +9432,7 @@ module Pandarus
         :locked,
         :hidden,
         :position,
-        
+
       ]
 
       # verify existence of params
@@ -9474,7 +9474,7 @@ module Pandarus
     end
     def create_folder_users(user_id,name,parent_folder_id,parent_folder_path,lock_at,unlock_at,locked,hidden,position,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -9486,7 +9486,7 @@ module Pandarus
         :locked,
         :hidden,
         :position,
-        
+
       ]
 
       # verify existence of params
@@ -9528,7 +9528,7 @@ module Pandarus
     end
     def create_folder_groups(group_id,name,parent_folder_id,parent_folder_path,lock_at,unlock_at,locked,hidden,position,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -9540,7 +9540,7 @@ module Pandarus
         :locked,
         :hidden,
         :position,
-        
+
       ]
 
       # verify existence of params
@@ -9582,7 +9582,7 @@ module Pandarus
     end
     def create_folder_folders(folder_id,name,parent_folder_id,parent_folder_path,lock_at,unlock_at,locked,hidden,position,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -9594,7 +9594,7 @@ module Pandarus
         :locked,
         :hidden,
         :position,
-        
+
       ]
 
       # verify existence of params
@@ -9640,7 +9640,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9665,15 +9665,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def upload_file(folder_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9696,7 +9696,7 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def query_by_assignment(assignment_id,opts={})
       query_param_keys = [
@@ -9705,7 +9705,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9736,7 +9736,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9767,7 +9767,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9798,7 +9798,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9824,11 +9824,11 @@ module Pandarus
     end
     def days_in_gradebook_history_for_this_course(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9854,11 +9854,11 @@ module Pandarus
     end
     def details_for_given_date_in_gradebook_history_for_this_course(course_id,date,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9887,11 +9887,11 @@ module Pandarus
     end
     def lists_submissions(course_id,date,grader_id,assignment_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9932,7 +9932,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9958,11 +9958,11 @@ module Pandarus
     end
     def list_group_categories_for_context_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -9988,11 +9988,11 @@ module Pandarus
     end
     def list_group_categories_for_context_courses(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10018,11 +10018,11 @@ module Pandarus
     end
     def get_single_group_category(group_category_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10048,7 +10048,7 @@ module Pandarus
     end
     def create_group_category_accounts(account_id,name,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -10057,7 +10057,7 @@ module Pandarus
         :group_limit,
         :create_group_count,
         :split_group_count,
-        
+
       ]
 
       # verify existence of params
@@ -10085,7 +10085,7 @@ module Pandarus
     end
     def create_group_category_courses(course_id,name,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -10094,7 +10094,7 @@ module Pandarus
         :group_limit,
         :create_group_count,
         :split_group_count,
-        
+
       ]
 
       # verify existence of params
@@ -10122,7 +10122,7 @@ module Pandarus
     end
     def update_group_category(group_category_id,name,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -10131,7 +10131,7 @@ module Pandarus
         :group_limit,
         :create_group_count,
         :split_group_count,
-        
+
       ]
 
       # verify existence of params
@@ -10159,11 +10159,11 @@ module Pandarus
     end
     def delete_group_category(group_category_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10186,15 +10186,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_groups_in_group_category(group_category_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10225,7 +10225,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10251,12 +10251,12 @@ module Pandarus
     end
     def assign_unassigned_members(group_category_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :sync,
-        
+
       ]
 
       # verify existence of params
@@ -10286,13 +10286,13 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -10311,11 +10311,11 @@ module Pandarus
     end
     def list_the_groups_available_in_context_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10341,11 +10341,11 @@ module Pandarus
     end
     def list_the_groups_available_in_context_courses(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10375,7 +10375,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10403,7 +10403,7 @@ module Pandarus
     end
     def create_group_groups(name,description,is_public,join_level,storage_quota_mb,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -10412,7 +10412,7 @@ module Pandarus
         :is_public,
         :join_level,
         :storage_quota_mb,
-        
+
       ]
 
       # verify existence of params
@@ -10446,7 +10446,7 @@ module Pandarus
     end
     def create_group_group_categories(group_category_id,name,description,is_public,join_level,storage_quota_mb,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -10455,7 +10455,7 @@ module Pandarus
         :is_public,
         :join_level,
         :storage_quota_mb,
-        
+
       ]
 
       # verify existence of params
@@ -10491,7 +10491,7 @@ module Pandarus
     end
     def edit_group(group_id,name,description,is_public,join_level,avatar_id,storage_quota_mb,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -10501,7 +10501,7 @@ module Pandarus
         :join_level,
         :avatar_id,
         :storage_quota_mb,
-        
+
       ]
 
       # verify existence of params
@@ -10539,11 +10539,11 @@ module Pandarus
     end
     def delete_group(group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10569,11 +10569,11 @@ module Pandarus
     end
     def follow_group(group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10596,15 +10596,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def un_follow_group(group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10627,16 +10627,16 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def invite_others_to_group(group_id,invitees,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :invitees,
-        
+
       ]
 
       # verify existence of params
@@ -10661,7 +10661,7 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def list_group_s_users(group_id,opts={})
       query_param_keys = [
@@ -10669,7 +10669,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10695,11 +10695,11 @@ module Pandarus
     end
     def upload_file(group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10722,16 +10722,16 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def preview_processed_html(group_id,html,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :html,
-        
+
       ]
 
       # verify existence of params
@@ -10756,15 +10756,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def group_activity_stream(group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10787,15 +10787,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def group_activity_stream_summary(group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10818,7 +10818,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_group_memberships_groups(group_id,opts={})
       query_param_keys = [
@@ -10826,7 +10826,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10856,7 +10856,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -10882,12 +10882,12 @@ module Pandarus
     end
     def create_membership(group_id,user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :user_id,
-        
+
       ]
 
       # verify existence of params
@@ -10915,13 +10915,13 @@ module Pandarus
     end
     def update_membership_groups(group_id,membership_id,moderator,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :workflow_state,
         :moderator,
-        
+
       ]
 
       # verify existence of params
@@ -10952,13 +10952,13 @@ module Pandarus
     end
     def update_membership_groups(group_id,user_id,moderator,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :workflow_state,
         :moderator,
-        
+
       ]
 
       # verify existence of params
@@ -10989,11 +10989,11 @@ module Pandarus
     end
     def leave_group_groups(group_id,membership_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11019,15 +11019,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def leave_group_groups(group_id,user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11053,7 +11053,7 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_user_logins_accounts(account_id,user__id__,opts={})
       query_param_keys = [
@@ -11061,7 +11061,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11086,7 +11086,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_user_logins_users(user_id,user__id__,opts={})
       query_param_keys = [
@@ -11094,7 +11094,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11119,11 +11119,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def create_user_login(account_id,user__id__,login__unique_id__,login__password__,login__sis_user_id__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -11131,7 +11131,7 @@ module Pandarus
         :login__unique_id__,
         :login__password__,
         :login__sis_user_id__,
-        
+
       ]
 
       # verify existence of params
@@ -11162,18 +11162,18 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def edit_user_login(account_id,id,login__unique_id__,login__password__,login__sis_user_id__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :login__unique_id__,
         :login__password__,
         :login__sis_user_id__,
-        
+
       ]
 
       # verify existence of params
@@ -11205,15 +11205,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def delete_user_login(user_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11239,7 +11239,7 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_modules(course_id,include,opts={})
       query_param_keys = [
@@ -11249,7 +11249,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11282,7 +11282,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11313,7 +11313,7 @@ module Pandarus
     end
     def create_module(course_id,module__name__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -11323,7 +11323,7 @@ module Pandarus
         :module__require_sequential_progress__,
         :module__prerequisite_module_ids__,
         :module__publish_final_grade__,
-        
+
       ]
 
       # verify existence of params
@@ -11351,7 +11351,7 @@ module Pandarus
     end
     def update_module(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -11362,7 +11362,7 @@ module Pandarus
         :module__prerequisite_module_ids__,
         :module__publish_final_grade__,
         :module__published__,
-        
+
       ]
 
       # verify existence of params
@@ -11391,11 +11391,11 @@ module Pandarus
     end
     def delete_module(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11430,7 +11430,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11466,7 +11466,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11500,7 +11500,7 @@ module Pandarus
     end
     def create_module_item(course_id,module_id,module_item__type__,module_item__content_id__,module_item__page_url__,module_item__external_url__,module_item__completion_requirement____min_score__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -11514,7 +11514,7 @@ module Pandarus
         :module_item__new_tab__,
         :module_item__completion_requirement____type__,
         :module_item__completion_requirement____min_score__,
-        
+
       ]
 
       # verify existence of params
@@ -11553,7 +11553,7 @@ module Pandarus
     end
     def update_module_item(course_id,module_id,id,module_item__completion_requirement____min_score__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -11566,7 +11566,7 @@ module Pandarus
         :module_item__completion_requirement____min_score__,
         :module_item__published__,
         :module_item__module_id__,
-        
+
       ]
 
       # verify existence of params
@@ -11600,11 +11600,11 @@ module Pandarus
     end
     def delete_module_item(course_id,module_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11641,7 +11641,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11671,11 +11671,11 @@ module Pandarus
     end
     def list_preferences_users(user_id,communication_channel_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11704,11 +11704,11 @@ module Pandarus
     end
     def list_preferences_users(user_id,type,address,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11740,11 +11740,11 @@ module Pandarus
     end
     def get_preference_users(user_id,communication_channel_id,notification,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11776,11 +11776,11 @@ module Pandarus
     end
     def get_preference_users(user_id,type,address,notification,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -11815,12 +11815,12 @@ module Pandarus
     end
     def update_preference_users(communication_channel_id,notification,notification_preferences__frequency__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :notification_preferences__frequency__,
-        
+
       ]
 
       # verify existence of params
@@ -11848,16 +11848,16 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def update_preference_users(type,address,notification,notification_preferences__frequency__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :notification_preferences__frequency__,
-        
+
       ]
 
       # verify existence of params
@@ -11888,16 +11888,16 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def update_multiple_preferences_users(communication_channel_id,notification_preferences____x_____frequency__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :notification_preferences____x_____frequency__,
-        
+
       ]
 
       # verify existence of params
@@ -11922,16 +11922,16 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def update_multiple_preferences_users(type,address,notification_preferences____x_____frequency__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :notification_preferences____x_____frequency__,
-        
+
       ]
 
       # verify existence of params
@@ -11959,21 +11959,21 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def redirect_to_root_outcome_group_for_context_global(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -11989,15 +11989,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def redirect_to_root_outcome_group_for_context_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12020,15 +12020,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def redirect_to_root_outcome_group_for_context_courses(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12051,15 +12051,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_all_outcome_groups_for_context_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12085,11 +12085,11 @@ module Pandarus
     end
     def get_all_outcome_groups_for_context_courses(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12115,11 +12115,11 @@ module Pandarus
     end
     def get_all_outcome_links_for_context_accounts(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12145,11 +12145,11 @@ module Pandarus
     end
     def get_all_outcome_links_for_context_courses(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12175,11 +12175,11 @@ module Pandarus
     end
     def show_outcome_group_global(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12205,11 +12205,11 @@ module Pandarus
     end
     def show_outcome_group_accounts(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12238,11 +12238,11 @@ module Pandarus
     end
     def show_outcome_group_courses(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12271,7 +12271,7 @@ module Pandarus
     end
     def update_outcome_group_global(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -12279,7 +12279,7 @@ module Pandarus
         :description,
         :vendor_guid,
         :parent_outcome_group_id,
-        
+
       ]
 
       # verify existence of params
@@ -12305,7 +12305,7 @@ module Pandarus
     end
     def update_outcome_group_accounts(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -12313,7 +12313,7 @@ module Pandarus
         :description,
         :vendor_guid,
         :parent_outcome_group_id,
-        
+
       ]
 
       # verify existence of params
@@ -12342,7 +12342,7 @@ module Pandarus
     end
     def update_outcome_group_courses(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -12350,7 +12350,7 @@ module Pandarus
         :description,
         :vendor_guid,
         :parent_outcome_group_id,
-        
+
       ]
 
       # verify existence of params
@@ -12379,11 +12379,11 @@ module Pandarus
     end
     def delete_outcome_group_global(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12409,11 +12409,11 @@ module Pandarus
     end
     def delete_outcome_group_accounts(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12442,11 +12442,11 @@ module Pandarus
     end
     def delete_outcome_group_courses(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12475,11 +12475,11 @@ module Pandarus
     end
     def list_linked_outcomes_global(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12505,11 +12505,11 @@ module Pandarus
     end
     def list_linked_outcomes_accounts(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12538,11 +12538,11 @@ module Pandarus
     end
     def list_linked_outcomes_courses(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12571,7 +12571,7 @@ module Pandarus
     end
     def create_link_outcome_global(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -12582,7 +12582,7 @@ module Pandarus
         :mastery_points,
         :ratings__description__,
         :ratings__points__,
-        
+
       ]
 
       # verify existence of params
@@ -12608,7 +12608,7 @@ module Pandarus
     end
     def create_link_outcome_global(id,outcome_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -12618,7 +12618,7 @@ module Pandarus
         :mastery_points,
         :ratings__description__,
         :ratings__points__,
-        
+
       ]
 
       # verify existence of params
@@ -12647,7 +12647,7 @@ module Pandarus
     end
     def create_link_outcome_accounts(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -12658,7 +12658,7 @@ module Pandarus
         :mastery_points,
         :ratings__description__,
         :ratings__points__,
-        
+
       ]
 
       # verify existence of params
@@ -12687,7 +12687,7 @@ module Pandarus
     end
     def create_link_outcome_accounts(account_id,id,outcome_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -12697,7 +12697,7 @@ module Pandarus
         :mastery_points,
         :ratings__description__,
         :ratings__points__,
-        
+
       ]
 
       # verify existence of params
@@ -12729,7 +12729,7 @@ module Pandarus
     end
     def create_link_outcome_courses(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -12740,7 +12740,7 @@ module Pandarus
         :mastery_points,
         :ratings__description__,
         :ratings__points__,
-        
+
       ]
 
       # verify existence of params
@@ -12769,7 +12769,7 @@ module Pandarus
     end
     def create_link_outcome_courses(course_id,id,outcome_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -12779,7 +12779,7 @@ module Pandarus
         :mastery_points,
         :ratings__description__,
         :ratings__points__,
-        
+
       ]
 
       # verify existence of params
@@ -12811,11 +12811,11 @@ module Pandarus
     end
     def unlink_outcome_global(id,outcome_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12844,11 +12844,11 @@ module Pandarus
     end
     def unlink_outcome_accounts(account_id,id,outcome_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12880,11 +12880,11 @@ module Pandarus
     end
     def unlink_outcome_courses(course_id,id,outcome_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12916,11 +12916,11 @@ module Pandarus
     end
     def list_subgroups_global(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12946,11 +12946,11 @@ module Pandarus
     end
     def list_subgroups_accounts(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -12979,11 +12979,11 @@ module Pandarus
     end
     def list_subgroups_courses(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13012,14 +13012,14 @@ module Pandarus
     end
     def create_subgroup_global(id,title,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :title,
         :description,
         :vendor_guid,
-        
+
       ]
 
       # verify existence of params
@@ -13047,14 +13047,14 @@ module Pandarus
     end
     def create_subgroup_accounts(account_id,id,title,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :title,
         :description,
         :vendor_guid,
-        
+
       ]
 
       # verify existence of params
@@ -13085,14 +13085,14 @@ module Pandarus
     end
     def create_subgroup_courses(course_id,id,title,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :title,
         :description,
         :vendor_guid,
-        
+
       ]
 
       # verify existence of params
@@ -13123,12 +13123,12 @@ module Pandarus
     end
     def import_outcome_group_global(id,source_outcome_group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :source_outcome_group_id,
-        
+
       ]
 
       # verify existence of params
@@ -13156,12 +13156,12 @@ module Pandarus
     end
     def import_outcome_group_accounts(account_id,id,source_outcome_group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :source_outcome_group_id,
-        
+
       ]
 
       # verify existence of params
@@ -13192,12 +13192,12 @@ module Pandarus
     end
     def import_outcome_group_courses(course_id,id,source_outcome_group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :source_outcome_group_id,
-        
+
       ]
 
       # verify existence of params
@@ -13235,7 +13235,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13258,15 +13258,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def show_outcome(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13292,7 +13292,7 @@ module Pandarus
     end
     def update_outcome(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -13302,7 +13302,7 @@ module Pandarus
         :mastery_points,
         :ratings__description__,
         :ratings__points__,
-        
+
       ]
 
       # verify existence of params
@@ -13328,11 +13328,11 @@ module Pandarus
     end
     def show_front_page_courses(course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13358,11 +13358,11 @@ module Pandarus
     end
     def show_front_page_groups(group_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13388,7 +13388,7 @@ module Pandarus
     end
     def update_create_front_page_courses(course_id,wiki_page__body__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -13398,7 +13398,7 @@ module Pandarus
         :wiki_page__editing_roles__,
         :wiki_page__notify_of_update__,
         :wiki_page__published__,
-        
+
       ]
 
       # verify existence of params
@@ -13426,7 +13426,7 @@ module Pandarus
     end
     def update_create_front_page_groups(group_id,wiki_page__body__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -13436,7 +13436,7 @@ module Pandarus
         :wiki_page__editing_roles__,
         :wiki_page__notify_of_update__,
         :wiki_page__published__,
-        
+
       ]
 
       # verify existence of params
@@ -13471,7 +13471,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13504,7 +13504,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13530,7 +13530,7 @@ module Pandarus
     end
     def create_page_courses(course_id,wiki_page__title__,wiki_page__body__,wiki_page__hide_from_students__,wiki_page__notify_of_update__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -13541,7 +13541,7 @@ module Pandarus
         :wiki_page__notify_of_update__,
         :wiki_page__published__,
         :wiki_page__front_page__,
-        
+
       ]
 
       # verify existence of params
@@ -13575,7 +13575,7 @@ module Pandarus
     end
     def create_page_groups(group_id,wiki_page__title__,wiki_page__body__,wiki_page__hide_from_students__,wiki_page__notify_of_update__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -13586,7 +13586,7 @@ module Pandarus
         :wiki_page__notify_of_update__,
         :wiki_page__published__,
         :wiki_page__front_page__,
-        
+
       ]
 
       # verify existence of params
@@ -13620,11 +13620,11 @@ module Pandarus
     end
     def show_page_courses(course_id,url,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13653,11 +13653,11 @@ module Pandarus
     end
     def show_page_groups(group_id,url,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13686,7 +13686,7 @@ module Pandarus
     end
     def update_create_page_courses(course_id,url,wiki_page__title__,wiki_page__body__,wiki_page__hide_from_students__,wiki_page__notify_of_update__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -13697,7 +13697,7 @@ module Pandarus
         :wiki_page__notify_of_update__,
         :wiki_page__published__,
         :wiki_page__front_page__,
-        
+
       ]
 
       # verify existence of params
@@ -13734,7 +13734,7 @@ module Pandarus
     end
     def update_create_page_groups(group_id,url,wiki_page__title__,wiki_page__body__,wiki_page__hide_from_students__,wiki_page__notify_of_update__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -13745,7 +13745,7 @@ module Pandarus
         :wiki_page__notify_of_update__,
         :wiki_page__published__,
         :wiki_page__front_page__,
-        
+
       ]
 
       # verify existence of params
@@ -13782,11 +13782,11 @@ module Pandarus
     end
     def delete_page_courses(course_id,url,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13815,11 +13815,11 @@ module Pandarus
     end
     def delete_page_groups(group_id,url,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13848,11 +13848,11 @@ module Pandarus
     end
     def list_revisions_courses(course_id,url,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13881,11 +13881,11 @@ module Pandarus
     end
     def list_revisions_groups(group_id,url,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13918,7 +13918,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13951,7 +13951,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -13984,7 +13984,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14020,7 +14020,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14052,11 +14052,11 @@ module Pandarus
     end
     def revert_to_revision_courses(course_id,url,revision_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14088,11 +14088,11 @@ module Pandarus
     end
     def revert_to_revision_groups(group_id,url,revision_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14124,11 +14124,11 @@ module Pandarus
     end
     def query_progress(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14154,11 +14154,11 @@ module Pandarus
     end
     def get_available_quiz_ip_filters(course_id,quiz_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14184,11 +14184,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def create_question_group(course_id,quiz_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -14196,7 +14196,7 @@ module Pandarus
         :quiz_groups__pick_count__,
         :quiz_groups__question_points__,
         :quiz_groups__assessment_question_bank_id__,
-        
+
       ]
 
       # verify existence of params
@@ -14222,18 +14222,18 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def update_question_group(course_id,quiz_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :quiz_groups__name__,
         :quiz_groups__pick_count__,
         :quiz_groups__question_points__,
-        
+
       ]
 
       # verify existence of params
@@ -14262,15 +14262,15 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def delete_question_group(course_id,quiz_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14299,17 +14299,17 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def reorder_question_groups(course_id,quiz_id,id,order__id__,order__type__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :order__id__,
         :order__type__,
-        
+
       ]
 
       # verify existence of params
@@ -14342,17 +14342,17 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def create_quiz_report(course_id,quiz_id,quiz_report__report_type__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :quiz_report__report_type__,
         :quiz_report__includes_all_versions__,
-        
+
       ]
 
       # verify existence of params
@@ -14383,11 +14383,11 @@ module Pandarus
     end
     def get_quiz_report(course_id,quiz_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14419,13 +14419,13 @@ module Pandarus
     end
     def upload_file(course_id,quiz_id,name,on_duplicate,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :name,
         :on_duplicate,
-        
+
       ]
 
       # verify existence of params
@@ -14455,7 +14455,7 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def get_all_quiz_submission_questions(quiz_submission_id,include,opts={})
       query_param_keys = [
@@ -14463,7 +14463,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14488,7 +14488,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_single_quiz_submission_question(quiz_submission_id,id,include,opts={})
       query_param_keys = [
@@ -14496,7 +14496,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14524,11 +14524,11 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def answering_question(quiz_submission_id,id,attempt,validation_token,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -14536,7 +14536,7 @@ module Pandarus
         :validation_token,
         :access_code,
         :answer,
-        
+
       ]
 
       # verify existence of params
@@ -14566,18 +14566,18 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def flagging_question(quiz_submission_id,id,attempt,validation_token,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :attempt,
         :validation_token,
         :access_code,
-        
+
       ]
 
       # verify existence of params
@@ -14607,18 +14607,18 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def unflagging_question(quiz_submission_id,id,attempt,validation_token,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :attempt,
         :validation_token,
         :access_code,
-        
+
       ]
 
       # verify existence of params
@@ -14648,7 +14648,7 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def get_all_quiz_submissions(course_id,quiz_id,include,opts={})
       query_param_keys = [
@@ -14656,7 +14656,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14684,7 +14684,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_single_quiz_submission(course_id,quiz_id,id,include,opts={})
       query_param_keys = [
@@ -14692,7 +14692,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14723,17 +14723,17 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def create_the_quiz_submission_start_quiz_taking_session(course_id,quiz_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :access_code,
         :preview,
-        
+
       ]
 
       # verify existence of params
@@ -14759,18 +14759,18 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def update_student_question_scores_and_comments(course_id,quiz_id,id,attempt,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :attempt,
         :fudge_points,
         :questions,
-        
+
       ]
 
       # verify existence of params
@@ -14801,18 +14801,18 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def complete_the_quiz_submission_turn_it_in(course_id,quiz_id,id,attempt,validation_token,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :attempt,
         :validation_token,
         :access_code,
-        
+
       ]
 
       # verify existence of params
@@ -14845,15 +14845,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def list_questions_in_quiz(course_id,quiz_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14882,11 +14882,11 @@ module Pandarus
     end
     def get_single_quiz_question(course_id,quiz_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -14918,7 +14918,7 @@ module Pandarus
     end
     def create_single_quiz_question(course_id,quiz_id,question__question_name__,question__question_text__,question__question_type__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -14933,7 +14933,7 @@ module Pandarus
         :question__neutral_comments__,
         :question__text_after_answers__,
         :question__answers__,
-        
+
       ]
 
       # verify existence of params
@@ -14968,7 +14968,7 @@ module Pandarus
     end
     def update_existing_quiz_question(course_id,quiz_id,id,question__question_name__,question__question_text__,question__question_type__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -14983,7 +14983,7 @@ module Pandarus
         :question__neutral_comments__,
         :question__text_after_answers__,
         :question__answers__,
-        
+
       ]
 
       # verify existence of params
@@ -15021,11 +15021,11 @@ module Pandarus
     end
     def delete_quiz_question(course_id,quiz_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15054,7 +15054,7 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def list_quizzes_in_course(course_id,opts={})
       query_param_keys = [
@@ -15062,7 +15062,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15088,11 +15088,11 @@ module Pandarus
     end
     def get_single_quiz(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15121,7 +15121,7 @@ module Pandarus
     end
     def create_quiz(course_id,quiz__title__,quiz__description__,quiz__quiz_type__,quiz__assignment_group_id__,quiz__time_limit__,quiz__shuffle_answers__,quiz__scoring_policy__,quiz__due_at__,quiz__lock_at__,quiz__unlock_at__,quiz__published__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -15145,7 +15145,7 @@ module Pandarus
         :quiz__lock_at__,
         :quiz__unlock_at__,
         :quiz__published__,
-        
+
       ]
 
       # verify existence of params
@@ -15193,12 +15193,12 @@ module Pandarus
     end
     def edit_quiz(course_id,id,quiz__notify_of_update__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :quiz__notify_of_update__,
-        
+
       ]
 
       # verify existence of params
@@ -15229,11 +15229,11 @@ module Pandarus
     end
     def delete_quiz(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15262,13 +15262,13 @@ module Pandarus
     end
     def reorder_quiz_items(course_id,id,order__id__,order__type__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :order__id__,
         :order__type__,
-        
+
       ]
 
       # verify existence of params
@@ -15298,7 +15298,7 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def list_roles(account_id,state,opts={})
       query_param_keys = [
@@ -15306,7 +15306,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15334,11 +15334,11 @@ module Pandarus
     end
     def get_single_role(account_id,role,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15367,7 +15367,7 @@ module Pandarus
     end
     def create_new_role(account_id,role,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -15376,7 +15376,7 @@ module Pandarus
         :permissions____x_____explicit__,
         :permissions____x_____enabled__,
         :permissions____x_____locked__,
-        
+
       ]
 
       # verify existence of params
@@ -15404,11 +15404,11 @@ module Pandarus
     end
     def deactivate_role(account_id,role,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15437,11 +15437,11 @@ module Pandarus
     end
     def activate_role(account_id,role,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15470,13 +15470,13 @@ module Pandarus
     end
     def update_role(account_id,role,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :permissions____x_____explicit__,
         :permissions____x_____enabled__,
-        
+
       ]
 
       # verify existence of params
@@ -15505,11 +15505,11 @@ module Pandarus
     end
     def get_sis_import_list(account_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15535,7 +15535,7 @@ module Pandarus
     end
     def import_sis_data(account_id,attachment,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -15547,7 +15547,7 @@ module Pandarus
         :override_sis_stickiness,
         :add_sis_stickiness,
         :clear_sis_stickiness,
-        
+
       ]
 
       # verify existence of params
@@ -15575,11 +15575,11 @@ module Pandarus
     end
     def get_sis_import_status(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15618,7 +15618,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15653,7 +15653,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def find_recipients_search(search,context,exclude,type,user_id,from_conversation_id,permissions,opts={})
       query_param_keys = [
@@ -15667,7 +15667,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15702,7 +15702,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_course_sections(course_id,opts={})
       query_param_keys = [
@@ -15710,7 +15710,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15736,7 +15736,7 @@ module Pandarus
     end
     def create_course_section(course_id,course_section__name__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -15744,7 +15744,7 @@ module Pandarus
         :course_section__sis_section_id__,
         :course_section__start_at__,
         :course_section__end_at__,
-        
+
       ]
 
       # verify existence of params
@@ -15772,11 +15772,11 @@ module Pandarus
     end
     def cross_list_section(id,new_course_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15805,11 +15805,11 @@ module Pandarus
     end
     def de_cross_list_section(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15835,11 +15835,11 @@ module Pandarus
     end
     def edit_section(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15865,11 +15865,11 @@ module Pandarus
     end
     def get_section_information_courses(course_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15898,11 +15898,11 @@ module Pandarus
     end
     def get_section_information_sections(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15928,11 +15928,11 @@ module Pandarus
     end
     def delete_section(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -15958,17 +15958,17 @@ module Pandarus
     end
     def get_kaltura_config(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -15984,21 +15984,21 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def start_kaltura_session(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -16014,15 +16014,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def upload_file(course_id,assignment_id,user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16051,11 +16051,11 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def submit_assignment_courses(course_id,assignment_id,comment__text_comment__,submission__submission_type__,submission__body__,submission__url__,submission__file_ids__,submission__media_comment_id__,submission__media_comment_type__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -16066,7 +16066,7 @@ module Pandarus
         :submission__file_ids__,
         :submission__media_comment_id__,
         :submission__media_comment_type__,
-        
+
       ]
 
       # verify existence of params
@@ -16106,11 +16106,11 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def submit_assignment_sections(section_id,assignment_id,comment__text_comment__,submission__submission_type__,submission__body__,submission__url__,submission__file_ids__,submission__media_comment_id__,submission__media_comment_type__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -16121,7 +16121,7 @@ module Pandarus
         :submission__file_ids__,
         :submission__media_comment_id__,
         :submission__media_comment_type__,
-        
+
       ]
 
       # verify existence of params
@@ -16161,7 +16161,7 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def list_assignment_submissions_courses(course_id,assignment_id,include,opts={})
       query_param_keys = [
@@ -16169,7 +16169,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16197,7 +16197,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_assignment_submissions_sections(section_id,assignment_id,include,opts={})
       query_param_keys = [
@@ -16205,7 +16205,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16233,7 +16233,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_submissions_for_multiple_assignments_courses(course_id,student_ids,assignment_ids,grouped,include,opts={})
       query_param_keys = [
@@ -16244,7 +16244,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16275,7 +16275,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_submissions_for_multiple_assignments_sections(section_id,student_ids,assignment_ids,grouped,include,opts={})
       query_param_keys = [
@@ -16286,7 +16286,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16317,7 +16317,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_single_submission_courses(course_id,assignment_id,user_id,include,opts={})
       query_param_keys = [
@@ -16325,7 +16325,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16356,7 +16356,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def get_single_submission_sections(section_id,assignment_id,user_id,include,opts={})
       query_param_keys = [
@@ -16364,7 +16364,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16395,15 +16395,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def upload_file_courses(course_id,assignment_id,user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16432,15 +16432,15 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def upload_file_sections(section_id,assignment_id,user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16469,11 +16469,11 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def grade_or_comment_on_submission_courses(course_id,assignment_id,user_id,comment__text_comment__,comment__media_comment_id__,comment__media_comment_type__,submission__posted_grade__,rubric_assessment,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -16484,7 +16484,7 @@ module Pandarus
         :comment__file_ids__,
         :submission__posted_grade__,
         :rubric_assessment,
-        
+
       ]
 
       # verify existence of params
@@ -16523,11 +16523,11 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def grade_or_comment_on_submission_sections(section_id,assignment_id,user_id,comment__text_comment__,comment__media_comment_id__,comment__media_comment_type__,submission__posted_grade__,rubric_assessment,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -16538,7 +16538,7 @@ module Pandarus
         :comment__file_ids__,
         :submission__posted_grade__,
         :rubric_assessment,
-        
+
       ]
 
       # verify existence of params
@@ -16577,7 +16577,7 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def list_available_tabs_for_course_or_group_courses(course_id,include,opts={})
       query_param_keys = [
@@ -16585,7 +16585,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16610,7 +16610,7 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_available_tabs_for_course_or_group_groups(group_id,include,opts={})
       query_param_keys = [
@@ -16618,7 +16618,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16643,17 +16643,17 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def update_tab_for_course(course_id,tab_id,position,hidden,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
         :position,
         :hidden,
-        
+
       ]
 
       # verify existence of params
@@ -16690,7 +16690,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16716,47 +16716,17 @@ module Pandarus
     end
     def list_the_activity_stream_users(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
-      )
 
-      # resource path
-      path = path_replace("/v1/users/self/activity_stream",
-        )
-      headers = nil
-      form_params = select_params(options, form_param_keys)
-      query_params = select_params(options, query_param_keys)
-      if opts[:next_page]
-        pagination_params = page_params_load(:get, path)
-        query_params.merge! pagination_params if pagination_params
-      end
-      response = mixed_request(:get, path, query_params, form_params, headers)
-      page_params_store(:get, path)
-      response
-      
-    end
-    def list_the_activity_stream_users(opts={})
-      query_param_keys = [
-        
-      ]
-
-      form_param_keys = [
-        
-      ]
-
-      # set default values and merge with input
-      options = underscored_merge_opts(opts,
-        {}
-      
       )
 
       # resource path
@@ -16772,21 +16742,21 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def activity_stream_summary(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -16802,21 +16772,21 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_the_todo_items(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -16832,21 +16802,21 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def list_upcoming_assignments_calendar_events(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -16862,15 +16832,15 @@ module Pandarus
       response = mixed_request(:get, path, query_params, form_params, headers)
       page_params_store(:get, path)
       response
-      
+
     end
     def hide_stream_item(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16893,21 +16863,21 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def hide_all_stream_items(opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # set default values and merge with input
       options = underscored_merge_opts(opts,
         {}
-      
+
       )
 
       # resource path
@@ -16923,15 +16893,15 @@ module Pandarus
       response = mixed_request(:delete, path, query_params, form_params, headers)
       page_params_store(:delete, path)
       response
-      
+
     end
     def upload_file(user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -16954,11 +16924,11 @@ module Pandarus
       response = mixed_request(:post, path, query_params, form_params, headers)
       page_params_store(:post, path)
       response
-      
+
     end
     def create_user(account_id,pseudonym__unique_id__,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -16975,7 +16945,7 @@ module Pandarus
         :pseudonym__send_confirmation__,
         :communication_channel__type__,
         :communication_channel__address__,
-        
+
       ]
 
       # verify existence of params
@@ -17003,45 +16973,12 @@ module Pandarus
     end
     def update_user_settings_users(id,manual_mark_as_read,opts={})
       query_param_keys = [
-        :manual_mark_as_read
-      ]
 
-      form_param_keys = [
-        
-      ]
-
-      # verify existence of params
-      raise "id is required" if id.nil?
-      raise "manual_mark_as_read is required" if manual_mark_as_read.nil?
-      # set default values and merge with input
-      options = underscored_merge_opts(opts,
-        :id => id,
-        :manual_mark_as_read => manual_mark_as_read
-      )
-
-      # resource path
-      path = path_replace("/v1/users/{id}/settings",
-        :id => id)
-      headers = nil
-      form_params = select_params(options, form_param_keys)
-      query_params = select_params(options, query_param_keys)
-      if opts[:next_page]
-        pagination_params = page_params_load(:get, path)
-        query_params.merge! pagination_params if pagination_params
-      end
-      response = mixed_request(:get, path, query_params, form_params, headers)
-      page_params_store(:get, path)
-      response
-      
-    end
-    def update_user_settings_users(id,manual_mark_as_read,opts={})
-      query_param_keys = [
-        
       ]
 
       form_param_keys = [
         :manual_mark_as_read,
-        
+
       ]
 
       # verify existence of params
@@ -17066,11 +17003,11 @@ module Pandarus
       response = mixed_request(:put, path, query_params, form_params, headers)
       page_params_store(:put, path)
       response
-      
+
     end
     def edit_user(id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
@@ -17081,7 +17018,7 @@ module Pandarus
         :user__locale__,
         :user__avatar____token__,
         :user__avatar____url__,
-        
+
       ]
 
       # verify existence of params
@@ -17107,11 +17044,11 @@ module Pandarus
     end
     def delete_user(account_id,id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -17138,75 +17075,13 @@ module Pandarus
       page_params_store(:delete, path)
       User.new(response)
     end
-    def follow_user(user_id,opts={})
+    def merge_user_into_another_user(id,destination_user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
-      ]
 
-      # verify existence of params
-      raise "user_id is required" if user_id.nil?
-      # set default values and merge with input
-      options = underscored_merge_opts(opts,
-        :user_id => user_id
-      )
-
-      # resource path
-      path = path_replace("/v1/users/{user_id}/followers/self",
-        :user_id => user_id)
-      headers = nil
-      form_params = select_params(options, form_param_keys)
-      query_params = select_params(options, query_param_keys)
-      if opts[:next_page]
-        pagination_params = page_params_load(:put, path)
-        query_params.merge! pagination_params if pagination_params
-      end
-      response = mixed_request(:put, path, query_params, form_params, headers)
-      page_params_store(:put, path)
-      response
-      
-    end
-    def un_follow_user(user_id,opts={})
-      query_param_keys = [
-        
-      ]
-
-      form_param_keys = [
-        
-      ]
-
-      # verify existence of params
-      raise "user_id is required" if user_id.nil?
-      # set default values and merge with input
-      options = underscored_merge_opts(opts,
-        :user_id => user_id
-      )
-
-      # resource path
-      path = path_replace("/v1/users/{user_id}/followers/self",
-        :user_id => user_id)
-      headers = nil
-      form_params = select_params(options, form_param_keys)
-      query_params = select_params(options, query_param_keys)
-      if opts[:next_page]
-        pagination_params = page_params_load(:delete, path)
-        query_params.merge! pagination_params if pagination_params
-      end
-      response = mixed_request(:delete, path, query_params, form_params, headers)
-      page_params_store(:delete, path)
-      response
-      
-    end
-    def merge_user_into_another_user_users(id,destination_user_id,opts={})
-      query_param_keys = [
-        
-      ]
-
-      form_param_keys = [
-        
       ]
 
       # verify existence of params
@@ -17233,13 +17108,13 @@ module Pandarus
       page_params_store(:put, path)
       User.new(response)
     end
-    def merge_user_into_another_user_users(id,destination_account_id,destination_user_id,opts={})
+    def merge_user_into_another_account_user(id,destination_account_id,destination_user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -17269,44 +17144,13 @@ module Pandarus
       page_params_store(:put, path)
       User.new(response)
     end
-    def list_associated_root_accounts(id,opts={})
-      query_param_keys = [
-        :search
-      ]
-
-      form_param_keys = [
-        
-      ]
-
-      # verify existence of params
-      raise "id is required" if id.nil?
-      # set default values and merge with input
-      options = underscored_merge_opts(opts,
-        :id => id
-      )
-
-      # resource path
-      path = path_replace("/v1/users/{id}/accounts",
-        :id => id)
-      headers = nil
-      form_params = select_params(options, form_param_keys)
-      query_params = select_params(options, query_param_keys)
-      if opts[:next_page]
-        pagination_params = page_params_load(:get, path)
-        query_params.merge! pagination_params if pagination_params
-      end
-      response = mixed_request(:get, path, query_params, form_params, headers)
-      page_params_store(:get, path)
-      response
-      
-    end
     def get_user_profile(user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -17332,11 +17176,11 @@ module Pandarus
     end
     def list_avatar_options(user_id,opts={})
       query_param_keys = [
-        
+
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -17367,7 +17211,7 @@ module Pandarus
       ]
 
       form_param_keys = [
-        
+
       ]
 
       # verify existence of params
@@ -17391,7 +17235,7 @@ module Pandarus
       page_params_store(:get, path)
       response.map {|response|PageView.new(response)}
     end
-    
+
   end
 end
 
